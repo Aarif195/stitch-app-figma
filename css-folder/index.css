@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #245949;
+  --secondary-color: #fff;
+  --background-color: #ecece0;
+  --font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  /* border: 1px solid red; */
+}
+
+/* Main Character */
+main {
+  margin-top: 50px;
+}
+
+/* <!-- first Section --> */
+.first-sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fashion {
+  width: 70%;
+}
+
+.first-sec h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.fashion p {
+  width: 60%;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.fashion button {
+  padding: 12px 20px;
+  border-radius: 800px;
+  margin-top: 20px;
+}
+
+.btn-discover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.btn-create {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.first-sec img {
+  width: 400px;
+  height: 240px;
+  object-fit: contain;
+}
+
+/* <!-- second Section --> */
+.second-sec {
+  margin-top: 50px;
+  background: var(--background-color);
+  padding: 1rem 1rem;
+  /* margin: 2rem 1rem;  */
+
+  .ratings {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  h4 {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  p {
+    margin-top: 4px;
+  }
+}
+
+/* top related Div */
+.top-designer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    background: var(--background-color);
+    padding: 5px 19px;
+    text-decoration: none;
+  }
+}
+
+/* third-sec */
+.third-sec {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  row-gap: 50px;
+  column-gap: 320px;
+
+  .designCard {
+    width: 400px;
+  }
+
+  .store {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 8px;
+  }
+
+  /* .paa p {
+    font-weight: 400;
+    font-size: 8px;
+    color: #000000;
+  } */
+
+  .joblabel {
+    display: flex;
+    gap: 7px;
+  }
+
+  .joblabel img {
+    width: 8px;
+    height: 15px;
+  }
+
+  .distanceInfo {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .distanceInfo p {
+    font-weight: 400;
+    font-size: 15px;
+    /* color: var(--primary-color); */
+  }
+
+  .distanceInfo span {
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--primary-color);
+  }
+
+  .storeDescription-1 {
+    color: #3e3e3e;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .storeDescription-2 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 10px;
+    color: #8c8c8c;
+  }
+
+  button {
+    margin-top: 30px;
+    border-radius: 800px;
+    padding: 12px 45px;
+  }
+
+  .chatbutton {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+  }
+
+  .bookbutton {
+    background: var(--background-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+}
+
+
+ /* fourth Section   */
+.different {
+  margin-top: 60px;
+
+  
+ h2 {
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+  
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 30px;
+  }
+
+  /* <!-- first Section --> */
+  .first-sec {
+    flex-direction: column;
+  }
+
+  .first-sec h2 {
+    font-size: 22px;
+  }
+
+  .fashion {
+    width: 100%;
+  }
+
+  .fashion p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .first-sec img {
+    width: 100%;
+    display: block;
+    min-height: 240px;
+    margin-top: 40px;
+  }
+
+  /* <!-- second Section --> */
+  .second-sec {
+h4 {
+    font-size: 18px;
+  }
+
+ p {
+    margin-top: 8px;
+  }
+
+.ratings {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 0rem;
+    gap: 25px;
+  }
+
+   .ratings img {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  }
+  
+
+ 
+
+
+
+  /* top related Div */
+  .top-designer {
+    p,
+    a {
+      font-size: 16px;
+    }
+  }
+
+  /* <!-- third Section --> */
+  .third-sec {
+    width: 400px;
+    grid-template-columns: 1fr;
+  }
+
+  .yes {
+    width: 340px;
+  }
+
+  .store {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .storeDescription-1 {
+    width: 80%;
+  }
+
+
+
+  /* fourth Section */
+.different {
+
+  h2 {
+    font-size: 20px;
+  }
+
+}
+
+}
