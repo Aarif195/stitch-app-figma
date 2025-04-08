@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -93,7 +93,8 @@ main {
 }
 
 /* top related Div */
-.top-designer {
+.top-designer,
+.popular-designs {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -115,6 +116,10 @@ main {
   }
 }
 
+.popular-designs {
+  margin-top: 80px;
+}
+
 /* third-sec */
 .third-sec {
   margin-top: 60px;
@@ -122,7 +127,7 @@ main {
   grid-template-columns: repeat(3, 240px);
   row-gap: 50px;
   column-gap: 320px;
-
+  margin: 4rem;
   .designCard {
     width: 400px;
   }
@@ -133,12 +138,6 @@ main {
     /* align-items: center; */
     margin-top: 8px;
   }
-
-  /* .paa p {
-    font-weight: 400;
-    font-size: 8px;
-    color: #000000;
-  } */
 
   .joblabel {
     display: flex;
@@ -203,40 +202,306 @@ main {
   }
 }
 
-
- /* fourth Section   */
+/* fourth Section   */
 .different {
   margin-top: 60px;
 
-  
- h2 {
+  h2 {
     font-weight: 500;
     font-size: 36px;
     text-align: center;
-  
+  }
+
+  .tailor-work {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .rectangle {
+    width: 222px;
+    height: 285px;
+  }
+
+  .sewing-machine-imgage {
+    width: 166px;
+    height: 179px;
+    position: absolute;
+    top: 16%;
+    left: 10.4%;
+  }
+
+  .sewing-machine {
+    width: 166px;
+    height: 179px;
+    position: absolute;
+    top: 16%;
+    left: 43.4%;
+  }
+
+  .sewing-imgage {
+    width: 166px;
+    height: 179px;
+    position: absolute;
+    top: 16%;
+    left: 78.2%;
+  }
+
+  .tailor-detail {
+  }
+
+  .tailor-work h4 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 15px;
+  }
+
+  .tailor-work p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-family: Open Sans;
+  }
+}
+
+/* <!-- fifth Section --> */
+.fifth-sec {
+  margin-top: 60px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin: 4rem; */
+  justify-content: center;
+  gap: 130px;
+
+  /* .popular-designers {
+  } */
+
+  .popular-designers p {
+    color: #828282;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Barlow;
+    margin-top: 10px;
+  }
+
+  .popular-designers h4 {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .popular-designers h5 {
+    color: #828282;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+
+/* sixth-section */
+.sixth-sec {
+  margin-top: 90px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin: 4rem; */
+  justify-content: center;
+  gap: 130px;
+
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .popular-designers {
+    width: 370px;
+  }
+
+  .popular-designers p {
+    color: #828282;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Montserrat;
+    margin-top: 10px;
+  }
+
+  .popular-designers h4 {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .popular-designers h5 {
+    color: #4f4f4f;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+
+.readBtnDiv {
+  text-align: center;
+  margin-top: 60px;
+
+  .readBtn a {
+    text-decoration: none;
+    color: #8b9467;
+    cursor: pointer;
+  }
+
+  .readBtn {
+    padding: 12px 20px;
+    border: 1px;
+    border-radius: 800px;
+  }
 }
 
 
+.hover {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 100px auto;
 }
 
+.hover-box {
+  width: 35px;
+  height: 5px;
+  background-color: transparent;
+  /* background-color: red; */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 
+/* seventh-section */
+.seventh-sec {
+  margin-top: 50px;
 
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: #1e1e1e;
+  }
 
+  .client-testimonial {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+  }
 
+  .testimonial-card {
+    background-color: #8b9467;
+    width: 300px;
+    min-height: 300px;
+    padding: 1rem;
+    border-radius: 35px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
+  .user-image {
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
 
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 
+  .testimonial-card p {
+    font-weight: 600px;
+    font-size: 24px;
+    color: #fff;
+  }
 
+  .testimonial-card p span {
+    font-weight: 500px;
+    font-size: 14px;
+    color: #e1e1e1;
+    display: block;
+  }
 
+  .testimonial-card h6 {
+    font-weight: 500px;
+    font-size: 16px;
+    color: #fff;
+    /* margin-top: 35px; */
+    line-height: 1.7;
+  }
 
+  .quote-icon {
+    text-align: right;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    color: #fff;
+  }
 
+  .comment-1 {
+    background: #fff;
+  }
 
+  .comment2 p,
+  .comment-1 h6 {
+    color: #000;
+  }
+  .comment2 p span {
+    color: #989898;
+  }
 
+  .quote-icon-1 {
+    text-align: right;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    color: #8b9467;
+  }
+}
 
+/* newsletter */
+.newsletter {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
+  h5 {
+    font-weight: 500;
+    font-size: 38px;
+    color: #000;
+  }
 
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #828282;
+  }
 
+  button {
+    border-top-right-radius: 800px;
+    border-bottom-right-radius: 800px;
+    border: none;
+    padding: 12px 20px;
+    background-color: #ecece0;
+    text-transform: uppercase;
+  }
+}
 
+/* MOBILE DESIGN */
 @media screen and (max-width: 768px) {
   main {
     margin-top: 30px;
@@ -269,36 +534,30 @@ main {
 
   /* <!-- second Section --> */
   .second-sec {
-h4 {
-    font-size: 18px;
+    h4 {
+      font-size: 18px;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+
+    .ratings {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem 0rem;
+      gap: 25px;
+    }
+
+    .ratings img {
+      width: 30px;
+      height: 30px;
+    }
   }
-
- p {
-    margin-top: 8px;
-  }
-
-.ratings {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem 0rem;
-    gap: 25px;
-  }
-
-   .ratings img {
-    width: 30px;
-    height: 30px;
-  }
-
-
-  }
-  
-
- 
-
-
 
   /* top related Div */
-  .top-designer {
+  .top-designer,
+  .popular-designs {
     p,
     a {
       font-size: 16px;
@@ -309,6 +568,8 @@ h4 {
   .third-sec {
     width: 400px;
     grid-template-columns: 1fr;
+    margin: 0;
+    margin-top: 50px;
   }
 
   .yes {
@@ -323,15 +584,90 @@ h4 {
     width: 80%;
   }
 
-
-
   /* fourth Section */
-.different {
+  .different {
+    h2 {
+      font-size: 20px;
+    }
 
-  h2 {
-    font-size: 20px;
+    .tailor-work {
+      flex-direction: column;
+      gap: 40px;
+      background: yellow;
+    }
+
+    .tailor-work h4,
+    p {
+      /* text-align: center; */
+    }
+
+    .sewing-machine-imgage {
+      top: 5.5%;
+      left: 24%;
+    }
+
+    .sewing-machine {
+      top: 39%;
+      left: 17%;
+    }
+
+    .sewing-imgage {
+      top: 74%;
+      left: 23%;
+    }
   }
 
-}
+  /* <!-- fifth Section --> */
+  .fifth-sec,
+  .sixth-sec {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 70px;
+    gap: 35px;
 
+    img {
+      display: block;
+      width: 340px;
+    }
+
+    .popular-designers h4 {
+      font-size: 16px;
+    }
+  }
+
+  .sixth-sec {
+    .popular-designers h5 {
+      width: 350px;
+    }
+  }
+
+  .readBtnDiv {
+    margin-top: 30px;
+  }
+
+  /* seventh-section */
+  .seventh-sec {
+    h1 {
+      font-size: 24px;
+    }
+
+    .client-testimonial {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  /* newsletter */
+
+  .newsletter {
+    flex-direction: column;
+    gap: 20px;
+
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
 }
