@@ -1,9 +1,10 @@
 footer {
   margin-top: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: var(--background-color);
-  padding: 2rem 3.5rem;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
 }
 
 .left-content {
@@ -19,8 +20,13 @@ footer {
 }
 
 .rigth-content {
-  display: flex;
-  gap: 50px;
+  /* display: flex;
+  gap: 50px; */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .col {

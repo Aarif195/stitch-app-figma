@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +10,12 @@
   --primary-color: #245949;
   --secondary-color: #fff;
   --background-color: #ecece0;
-  --font-family: "poppins", sans-serif;
+   font-family: "Inter", sans-serif;
 }
 
 body {
-  margin: 2rem 1rem;
-  padding: 0rem 1rem;
+  /* margin: 2rem 1rem; */
+  /* padding: 0rem 1rem; */
 }
 
 html,
@@ -50,7 +53,7 @@ header nav {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .btns-div {
@@ -76,7 +79,7 @@ header nav {
   border: 1px solid var(--primary-color);
 }
 
-.shopping-cart {
+.shopping-cart, .fa-solid {
   width: 32px;
   height: 32px;
 }

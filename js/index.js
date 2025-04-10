@@ -28,7 +28,7 @@ const products = [
     button2: "Book",
   },
   {
-    id: 1,
+    id: 2,
     name: "Dee Store",
     price: 10.99,
     paragraph1:
@@ -42,7 +42,7 @@ const products = [
     button2: "Book",
   },
   {
-    id: 1,
+    id: 3,
     name: "Dee Store",
     price: 10.99,
     paragraph1:
@@ -56,7 +56,7 @@ const products = [
     button2: "Book",
   },
   {
-    id: 1,
+    id: 4,
     name: "Dee Store",
     price: 10.99,
     paragraph1:
@@ -70,7 +70,7 @@ const products = [
     button2: "Book",
   },
   {
-    id: 1,
+    id: 5,
     name: "Dee Store",
     price: 10.99,
     paragraph1:
@@ -84,7 +84,7 @@ const products = [
     button2: "Book",
   },
   {
-    id: 1,
+    id: 6,
     name: "Dee Store",
     price: 10.99,
     paragraph1:
@@ -108,11 +108,10 @@ designerContainerSection.innerHTML = products
           <div class="store">
             <h5>${product.name}</h5>
             <div>
-              <img
-                src="img/${product.image2}"
-                alt=""
-              />
-              <img src="img/${product.image3}" alt="" />
+                          <i class="fa-solid fa-bookmark"></i>
+
+              <i class="fa-solid fa-share-nodes"></i>
+
             </div>
           </div>
           <p class="storeDescription-1">
@@ -120,8 +119,8 @@ designerContainerSection.innerHTML = products
           </p>
 
           <div class="distanceInfo">
-            <div class="joblabel">
-              <img src="img/${product.image4}" alt="" />
+            <div class="joblabel">                     <i class="fa-solid fa-location-dot"></i>
+
               <p>job</p>
             </div>
             <span>view on map</span>
@@ -136,6 +135,3 @@ designerContainerSection.innerHTML = products
 `
   )
   .join(" ");
-
-
-

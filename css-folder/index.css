@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
   margin: 0;
@@ -73,11 +73,13 @@ main {
   margin-top: 50px;
   background: var(--background-color);
   padding: 1rem 1rem;
+
   /* margin: 2rem 1rem;  */
 
   .ratings {
     display: flex;
     justify-content: space-around;
+    text-align: center;
   }
 
   h4 {
@@ -98,6 +100,7 @@ main {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  margin: 4rem;
 
   p {
     font-size: 20px;
@@ -128,6 +131,7 @@ main {
   row-gap: 50px;
   column-gap: 320px;
   margin: 4rem;
+
   .designCard {
     width: 400px;
   }
@@ -140,20 +144,19 @@ main {
 
   .joblabel {
     display: flex;
-    gap: 7px;
+    align-items: baseline;
   }
 
   .joblabel img {
-    width: 8px;
+    width: 18px;
     height: 15px;
   }
 
   .distanceInfo {
     margin-top: 10px;
     display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 10px;
+    gap: 10px;
+    align-items: baseline;
   }
 
   .distanceInfo p {
@@ -228,15 +231,15 @@ main {
     height: 179px;
     position: absolute;
     top: 16%;
-    left: 10.4%;
+    left: 10.8%;
   }
 
   .sewing-machine {
-    width: 166px;
-    height: 179px;
+    width: 156px;
+    height: 139px;
     position: absolute;
-    top: 16%;
-    left: 43.4%;
+    top: 20%;
+    left: 43.8%;
   }
 
   .sewing-imgage {
@@ -244,7 +247,7 @@ main {
     height: 179px;
     position: absolute;
     top: 16%;
-    left: 78.2%;
+    left: 79.2%;
   }
 
   .tailor-work h4 {
@@ -274,7 +277,6 @@ main {
   /* margin: 4rem; */
   justify-content: center;
   gap: 130px;
-
 
   .popular-designers p {
     color: #828282;
@@ -357,23 +359,6 @@ main {
   }
 }
 
-
-.hover {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 100px auto;
-}
-
-.hover-box {
-  width: 35px;
-  height: 5px;
-  background-color: transparent;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
 /* seventh-section */
 .seventh-sec {
   margin-top: 50px;
@@ -437,10 +422,10 @@ main {
     line-height: 1.7;
   }
 
-  .quote-icon {
-    text-align: right;
-    font-size: 1.5rem;
-    opacity: 0.6;
+  .quote {
+    position: relative;
+    left: 42%;
+    height: 15px;
     color: #fff;
   }
 
@@ -456,13 +441,36 @@ main {
   .comment2 p span {
     color: #989898;
   }
+}
 
-  .quote-icon-1 {
-    text-align: right;
-    font-size: 1.5rem;
-    opacity: 0.6;
-    color: #8b9467;
-  }
+/* Carousel */
+.carousel {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 20px;
+  white-space: nowrap;
+  /* border: 1px solid #ccc; */
+}
+
+.carousel span {
+  display: inline-block;
+  min-width: 20px;
+  height: 10px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.carousel span:hover,
+.carousel span.active {
+  background-color: #8b9467;
+  color: white;
 }
 
 /* newsletter */
@@ -510,11 +518,12 @@ main {
   }
 
   .fashion {
-    width: 100%;
+    width: 90%;
+    padding: 0rem 1rem;
   }
 
   .fashion p {
-    width: 100%;
+    width: 90%;
     font-size: 18px;
   }
 
@@ -551,6 +560,8 @@ main {
   /* top related Div */
   .top-designer,
   .popular-designs {
+    margin: 2rem;
+
     p,
     a {
       font-size: 16px;
@@ -561,7 +572,7 @@ main {
   .third-sec {
     width: 400px;
     grid-template-columns: 1fr;
-    margin: 0;
+    margin: 1rem;
     margin-top: 50px;
   }
 
@@ -588,21 +599,19 @@ main {
       gap: 40px;
     }
 
- 
-
     .sewing-machine-imgage {
       top: 5.5%;
       left: 24%;
     }
 
     .sewing-machine {
-      top: 39%;
-      left: 17%;
+      top: 40%;
+      left: 20%;
     }
 
     .sewing-imgage {
       top: 74%;
-      left: 23%;
+      left: 27%;
     }
   }
 
@@ -610,7 +619,7 @@ main {
   .fifth-sec,
   .sixth-sec {
     flex-direction: column;
-    margin: 0;
+    margin: 1rem;
     margin-top: 70px;
     gap: 35px;
 
@@ -659,5 +668,3 @@ main {
     }
   }
 }
-
-
