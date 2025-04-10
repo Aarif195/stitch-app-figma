@@ -135,7 +135,6 @@ main {
   .store {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     margin-top: 8px;
   }
 
@@ -160,7 +159,6 @@ main {
   .distanceInfo p {
     font-weight: 400;
     font-size: 15px;
-    /* color: var(--primary-color); */
   }
 
   .distanceInfo span {
@@ -249,9 +247,6 @@ main {
     left: 78.2%;
   }
 
-  .tailor-detail {
-  }
-
   .tailor-work h4 {
     font-weight: 600;
     font-size: 20px;
@@ -280,8 +275,6 @@ main {
   justify-content: center;
   gap: 130px;
 
-  /* .popular-designers {
-  } */
 
   .popular-designers p {
     color: #828282;
@@ -376,7 +369,6 @@ main {
   width: 35px;
   height: 5px;
   background-color: transparent;
-  /* background-color: red; */
   border-radius: 8px;
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -454,6 +446,7 @@ main {
 
   .comment-1 {
     background: #fff;
+    border: 1px solid #8b9467;
   }
 
   .comment2 p,
@@ -572,7 +565,7 @@ main {
     margin-top: 50px;
   }
 
-  .yes {
+  .designCardImg {
     width: 340px;
   }
 
@@ -593,13 +586,9 @@ main {
     .tailor-work {
       flex-direction: column;
       gap: 40px;
-      background: yellow;
     }
 
-    .tailor-work h4,
-    p {
-      /* text-align: center; */
-    }
+ 
 
     .sewing-machine-imgage {
       top: 5.5%;
@@ -658,7 +647,6 @@ main {
   }
 
   /* newsletter */
-
   .newsletter {
     flex-direction: column;
     gap: 20px;
@@ -671,3 +659,5 @@ main {
     }
   }
 }
+
+

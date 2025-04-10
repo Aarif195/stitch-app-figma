@@ -82,7 +82,6 @@ header nav {
 }
 
 /* Default styles for larger screens */
-
 .nav-links li {
   margin: 0 15px;
 }
@@ -115,12 +114,10 @@ header nav {
 @media screen and (max-width: 768px) {
   body {
     margin: 1rem 0rem;
-    /* padding: 0rem; */
   }
 
   header nav {
     padding: 1rem 1rem;
-    /* gap: 65px; */
   }
 
   .nav-links {
@@ -131,10 +128,9 @@ header nav {
     right: 0;
     background-color: #fff;
     width: 60%;
-    /* width: max-content; */
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .nav-links li {
@@ -159,7 +155,7 @@ header nav {
   }
 
   .close-btn {
-    position: fixed;
+    /* position: absolute; */
     top: 50px;
     font-size: 50px;
   }
