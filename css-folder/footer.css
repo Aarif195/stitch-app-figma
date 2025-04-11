@@ -19,11 +19,6 @@ footer {
   gap: 10px;
 }
 
-.rigth-content {
-  /* display: flex;
-  gap: 50px; */
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -56,10 +51,5 @@ a {
       flex-direction: column;
     }
 
-    .logo {
-      display: block;
-      width: 130px;
-      height: 40px;
-    }
   }
 }

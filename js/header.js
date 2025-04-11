@@ -20,4 +20,21 @@ closeIcon.addEventListener('click', () => {
 });
 
 
+// Carousel Functions
+document.querySelectorAll(".carousel-control").forEach((control) => {
+  control.addEventListener("click", () => {
+    const index = control.getAttribute("data-index");
 
+    // Update the active carousel control
+    document
+      .querySelectorAll(".carousel-control")
+      .forEach((c) => c.classList.remove("active"));
+    control.classList.add("active");
+
+    // Update the visible carousel item
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    carouselItems.forEach(
+      (item) => (item.style.transform = `translateX(-${index * 100}%)`)
+    );
+  });
+});

@@ -136,6 +136,11 @@ main {
     width: 400px;
   }
 
+  .designCardImg {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
   .store {
     display: flex;
     justify-content: space-between;
@@ -235,10 +240,10 @@ main {
   }
 
   .sewing-machine {
-    width: 156px;
-    height: 139px;
+    width: 166px;
+    height: 179px;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 43.8%;
   }
 
@@ -247,7 +252,7 @@ main {
     height: 179px;
     position: absolute;
     top: 16%;
-    left: 79.2%;
+    left: 79%;
   }
 
   .tailor-work h4 {
@@ -278,12 +283,19 @@ main {
   justify-content: center;
   gap: 130px;
 
+  .popular-designers {
+    border-radius: 8px;
+    border: 1px solid var(--background-color);
+    padding: 0 0rem 2rem 0;
+  }
+
   .popular-designers p {
     color: #828282;
     font-weight: 500;
     font-size: 12px;
     font-family: Barlow;
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-left: 15px;
   }
 
   .popular-designers h4 {
@@ -291,6 +303,7 @@ main {
     font-weight: 500;
     font-size: 20px;
     margin-top: 5px;
+    margin-left: 15px;
   }
 
   .popular-designers h5 {
@@ -298,6 +311,16 @@ main {
     font-weight: 600;
     font-size: 16px;
     margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  img {
+    width: 400px;
+    height: 382px;
+    display: block;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
 }
 
@@ -372,10 +395,10 @@ main {
 
   .client-testimonial {
     margin-top: 40px;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    gap: 130px;
+    gap: 130px; */
   }
 
   .testimonial-card {
@@ -443,34 +466,38 @@ main {
   }
 }
 
-/* Carousel */
+/* Carousel Format */
 .carousel {
-  margin-top: 50px;
+  position: relative;
+}
+
+.carousel-content {
   display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 20px;
-  white-space: nowrap;
-  /* border: 1px solid #ccc; */
 }
 
-.carousel span {
-  display: inline-block;
-  min-width: 20px;
-  height: 10px;
-  line-height: 100px;
+.carousel-controls {
   text-align: center;
-  background-color: #f0f0f0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 8px;
+  margin-top: 10px;
 }
 
-.carousel span:hover,
-.carousel span.active {
-  background-color: #8b9467;
-  color: white;
+.carousel-control {
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-control.active {
+  color: red;
 }
 
 /* newsletter */
@@ -480,10 +507,22 @@ main {
   align-items: center;
   justify-content: space-around;
 
+  .newsletterContent {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+  }
+
   h5 {
     font-weight: 500;
-    font-size: 38px;
     color: #000;
+    font-size: 28px;
+  }
+
+  input {
+    color: #000;
+    padding: 12px 20px;
+    border: none;
   }
 
   p {
@@ -604,9 +643,14 @@ main {
       left: 24%;
     }
 
+.rectangle-1 {
+  position: relative;
+  left: 10%;
+}
+
     .sewing-machine {
-      top: 40%;
-      left: 20%;
+      top: 39%;
+      left: 28%;
     }
 
     .sewing-imgage {
@@ -619,18 +663,22 @@ main {
   .fifth-sec,
   .sixth-sec {
     flex-direction: column;
-    margin: 1rem;
+    margin: 1.5rem;
     margin-top: 70px;
     gap: 35px;
 
     img {
       display: block;
-      width: 340px;
+      width: 325px;
     }
 
     .popular-designers h4 {
       font-size: 16px;
     }
+  }
+
+  .fifth-sec {
+    /* margin: 0; */
   }
 
   .sixth-sec {
@@ -660,11 +708,21 @@ main {
     flex-direction: column;
     gap: 20px;
 
+    .newsletterContent {
+      gap: 0;
+    }
+
     h5 {
       font-size: 20px;
     }
     p {
       font-size: 14px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    min-width: 100%; /* Ensure full-width on mobile */
   }
 }

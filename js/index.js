@@ -20,7 +20,7 @@ const products = [
     paragraph1:
       "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid inventore eaque.",
     paragrapgh2: "2km from your location",
-    image1: "Frame 1000003458.png",
+    image1: "Frame 1000003458.svg",
     image2: "material-symbols-light_bookmark-outline.png",
     image3: "iconamoon_share-1-thin.png",
     image4: "img/Vector.png",
@@ -34,7 +34,7 @@ const products = [
     paragraph1:
       "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid inventore eaque.",
     paragrapgh2: "2km from your location",
-    image1: "Frame 1000003458.png",
+    image1: "Frame 1000003458.svg",
     image2: "material-symbols-light_bookmark-outline.png",
     image3: "iconamoon_share-1-thin.png",
     image4: "img/Vector.png",
@@ -48,7 +48,7 @@ const products = [
     paragraph1:
       "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid inventore eaque.",
     paragrapgh2: "2km from your location",
-    image1: "Frame 1000003458.png",
+    image1: "Frame 1000003458.svg",
     image2: "material-symbols-light_bookmark-outline.png",
     image3: "iconamoon_share-1-thin.png",
     image4: "img/Vector.png",
@@ -62,7 +62,7 @@ const products = [
     paragraph1:
       "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid inventore eaque.",
     paragrapgh2: "2km from your location",
-    image1: "Frame 1000003458.png",
+    image1: "Frame 1000003458.svg",
     image2: "material-symbols-light_bookmark-outline.png",
     image3: "iconamoon_share-1-thin.png",
     image4: "img/Vector.png",
@@ -76,7 +76,7 @@ const products = [
     paragraph1:
       "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid inventore eaque.",
     paragrapgh2: "2km from your location",
-    image1: "Frame 1000003458.png",
+    image1: "Frame 1000003458.svg",
     image2: "material-symbols-light_bookmark-outline.png",
     image3: "iconamoon_share-1-thin.png",
     image4: "img/Vector.png",
@@ -90,7 +90,7 @@ const products = [
     paragraph1:
       "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid inventore eaque.",
     paragrapgh2: "2km from your location",
-    image1: "Frame 1000003458.png",
+    image1: "Frame 1000003458.svg",
     image2: "material-symbols-light_bookmark-outline.png",
     image3: "iconamoon_share-1-thin.png",
     image4: "img/Vector.png",
