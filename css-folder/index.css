@@ -609,14 +609,15 @@ main {
 
   /* <!-- third Section --> */
   .third-sec {
-    width: 400px;
+    width: 100%;
     grid-template-columns: 1fr;
-    margin: 1rem;
+    margin:1rem;
     margin-top: 50px;
   }
 
   .designCardImg {
     width: 340px;
+    display: block;
   }
 
   .store {
@@ -643,10 +644,10 @@ main {
       left: 24%;
     }
 
-.rectangle-1 {
-  position: relative;
-  left: 10%;
-}
+    .rectangle-1 {
+      position: relative;
+      left: 10%;
+    }
 
     .sewing-machine {
       top: 39%;
@@ -678,7 +679,7 @@ main {
   }
 
   .fifth-sec {
-    /* margin: 0; */
+    width: 325px;
   }
 
   .sixth-sec {
