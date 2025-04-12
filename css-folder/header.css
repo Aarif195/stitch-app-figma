@@ -62,6 +62,12 @@ header nav {
   height: 32px;
 }
 
+.btns-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 /* Default styles for larger screens */
 .nav-links li {
   margin: 0 15px;
@@ -173,43 +179,40 @@ header nav {
       transition: transform 0.4s ease-in-out;
     }
 
- .nav-links li {
-    margin: 10px 0;
-    text-align: center;
-  }
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
 
-  .hamburger {
-    display: flex;
-    cursor: pointer;
-  }
+    .hamburger {
+      display: flex;
+      cursor: pointer;
+    }
 
+    /* show close buton when menu is open */
+    .nav-links.active {
+      /* display: block; */
+      /* right: 0;  */
+    }
 
-   /* show close buton when menu is open */
-  .nav-links.active {
-    /* display: block; */
-    /* right: 0;  */
-  }
+    /* Show the menu when hamburger is clicked */
+    .nav-links.active {
+      display: flex;
+      gap: 10px;
+      transform: translateX(0);
+    }
 
-  /* Show the menu when hamburger is clicked */
-  .nav-links.active {
-    display: flex;
-    gap: 10px;
-    transform: translateX(0);
-  }
+    .close-btn {
+      position: absolute;
+      top: 25px;
+      font-size: 50px;
+      display: none;
+      cursor: pointer;
+    }
 
-  .close-btn {
-    position: absolute;
-    top: 25px;
-    font-size: 50px;
-    display: none;
-    cursor: pointer;
-  }
-
- /* Hide register/login buttons on modile */
-  .btns-div {
-    display: none;
-  }
-
-
+    /* Hide register/login buttons on modile */
+    .btns-div {
+      display: none;
+    }
   }
 }
