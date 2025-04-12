@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css-folder/tailor.css">
-  <link rel="stylesheet" href="css-folder/header.css">
-  <title>Tailor List</title>
-</head>
-<body>
-   <header>
-      <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css-folder/tailor.css" />
+    <link rel="stylesheet" href="css-folder/header.css" />
+    <link rel="stylesheet" href="css-folder/button.css" />
+    <title>Tailor List</title>
+  </head>
+  <body>
+    <header>
+      <nav class="tailorNavbar">
         <img src="img/Logo.png" alt="stitch-logo" class="logo" />
         <ul class="nav-links" id="nav-links">
           <li><a href="#">Home</a></li>
@@ -39,6 +44,25 @@
         <div class="close-btn close" id="close-btn">&times;</div>
       </nav>
     </header>
-  
-</body>
+
+    <div class="clothSize">
+      <h3>Get your clothes with perfect fit and on Time.</h3>
+      <button class="btn-book">Book Now</button>
+    </div>
+
+    <div class="inputDiv">
+      <div class="searchInput">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search by store name" name="" id="" />
+      </div>
+      <!--  -->
+      <div class="location">
+        <input type="text" placeholder=" Location " name="" id="" />
+        <img src="img/system-uicons_chevron-down.svg" alt="">
+      </div>
+
+    </div>
+
+    <script src="js/header.js"></script>
+  </body>
 </html>

@@ -1,0 +1,44 @@
+.btns-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btns-div button {
+  padding: 12px 20px;
+  border-radius: 800px;
+}
+
+.btns-div .btn-reg {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btns-div .btn-login {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-reg {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-create {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Tailor List Button Page styles */
+.btn-book {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 12px 20px;
+  border-radius: 800px;
+  width: 136px;
+  border: none;
+}
