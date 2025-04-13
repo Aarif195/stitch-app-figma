@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css-folder/tailor.css" />
     <link rel="stylesheet" href="css-folder/header.css" />
     <link rel="stylesheet" href="css-folder/button.css" />
+    <link rel="stylesheet" href="css-folder/index.css" />
     <title>Tailor List</title>
   </head>
   <body>
@@ -17,20 +18,38 @@
       <nav class="tailorNavbar">
         <img src="img/Logo.png" alt="stitch-logo" class="logo" />
         <ul class="nav-links" id="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Shop</a></li>
-          <li><a href="#">Find Tailor</a></li>
+          <li><a href="tailor.html">Find Tailor</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
-        <div class="btns-div">
-          <img
-            src="img/shopping-cart.png"
-            alt="shopping-cart"
-            class="shopping-cart"
-          />
-          <button class="btn-reg">REGISTER</button>
-          <button class="btn-login">LOGIN</button>
+         <div class="btns-div">
+          <div class="cart-icon">
+            <img
+              src="img/shopping-cart.png"
+              alt="shopping-cart"
+              class="shopping-cart"
+            />
+            <span class="cart-badge">3</span>
+          </div>
+
+          <!-- Btnreg & BtnLogin -->
+           <button class="btn-reg">REGISTER</button>
+          <button class="btn-login">LOGIN</button> 
+
+          <div class="user-profile">
+            <div class="avartar">
+              <div></div>
+              <span class="notification-dot"></span>
+
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user-text">
+              <p class="greeting">Good Morning!</p>
+              <span class="username">Grace Dan</span>
+            </div>
+          </div>
         </div>
 
         <!-- Hamburger Icon -->
@@ -45,24 +64,71 @@
       </nav>
     </header>
 
-    <div class="clothSize">
-      <h3>Get your clothes with perfect fit and on Time.</h3>
-      <button class="btn-book">Book Now</button>
-    </div>
-
-    <div class="inputDiv">
-      <div class="searchInput">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search by store name" name="" id="" />
-      </div>
-      <!--  -->
-      <div class="location">
-        <input type="text" placeholder=" Location " name="" id="" />
-        <img src="img/system-uicons_chevron-down.svg" alt="">
+    <main>
+      <div class="clothSize">
+        <h3>Get your clothes with perfect fit and on Time.</h3>
+        <button class="btn-book">Book Now</button>
       </div>
 
-    </div>
+      <div class="inputDiv">
+        <div class="searchInput">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search by store name" name="" id="" />
+        </div>
+        <!--  -->
+        <div class="location">
+          <input type="text" placeholder=" Location " name="" id="" />
+          <img src="img/system-uicons_chevron-down.svg" alt="" />
+        </div>
+      </div>
+
+   <!-- third-Section fron index.html -->
+      <section class="third-sec">
+     <!-- <div class="designCard">
+          <img src="img/Frame 1000003458.svg" class="designCardImg" alt="" />
+          <div class="store">
+            <h5>Dee Store</h5>
+            <div>
+              <i class="fa-solid fa-bookmark"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+          <p class="storeDescription-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            aliquid inventore eaque.
+          </p>
+
+          <div class="distanceInfo">
+            <div class="joblabel">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Jabi</p>
+            </div>
+            <span>view on map</span>
+          </div>
+
+          <p class="storeDescription-2">2km from your location</p>
+
+          <button class="chatbutton">Chat</button>
+          <button class="bookbutton">Book</button>
+        </div>  -->
+      </section>
+
+      <div class="paginationControls">
+        <button class="previewButton">Previews</button>
+        <div class="buttonPanel">
+          <button class="pageButton btn1">1</button>
+          <button class="pageButton">2</button>
+          <button class="pageButton">3</button>
+          <button class="pageButton">4</button>
+          <button class="pageButton">5</button>
+          <button class="pageButton">6</button>
+          <button class="pageButton">7</button>
+        </div>
+        <button class="nextButton">Next</button>
+      </div>
+    </main>
 
     <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

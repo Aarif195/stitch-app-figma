@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css-folder/index.css" />
     <link rel="stylesheet" href="css-folder/header.css" />
     <link rel="stylesheet" href="css-folder/footer.css" />
-    <link rel="stylesheet" href="css-folder/button.css">
+    <link rel="stylesheet" href="css-folder/button.css" />
   </head>
   <body>
     <header>
@@ -20,19 +20,37 @@
         <img src="img/Logo.svg" alt="stitch-logo" class="logo" />
         <ul class="nav-links" id="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="tailor.html">Find Tailor</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
         <div class="btns-div">
-          <img
-            src="img/shopping-cart.png"
-            alt="shopping-cart"
-            class="shopping-cart"
-          />
-          <button class="btn-reg">REGISTER</button>
-          <button class="btn-login">LOGIN</button>
+          <div class="cart-icon">
+            <img
+              src="img/shopping-cart.png"
+              alt="shopping-cart"
+              class="shopping-cart"
+            />
+            <span class="cart-badge">3</span>
+          </div>
+
+          <!-- Btnreg & BtnLogin -->
+           <button class="btn-reg">REGISTER</button>
+          <button class="btn-login">LOGIN</button> 
+
+          <div class="user-profile">
+            <div class="avartar">
+              <div></div>
+              <span class="notification-dot"></span>
+
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user-text">
+              <p class="greeting">Good Morning!</p>
+              <span class="username">Grace Dan</span>
+            </div>
+          </div>
         </div>
 
         <!-- Hamburger Icon -->
@@ -111,7 +129,7 @@
           <div class="distanceInfo">
             <div class="joblabel">
               <i class="fa-solid fa-location-dot"></i>
-              <p>job</p>
+              <p>Jabi</p>
             </div>
             <span>view on map</span>
           </div>
@@ -149,7 +167,11 @@
               class="rectangle rectangle-1"
               alt="Rectangle"
             />
-            <img src="img/My project-1 (2) 1.svg" class="sewing-machine" alt="" />
+            <img
+              src="img/My project-1 (2) 1.svg"
+              class="sewing-machine"
+              alt=""
+            />
             <h4>All size fit Recoomendation</h4>
             <p>Get style recoomendation that will fit your body</p>
           </div>
@@ -300,7 +322,7 @@
               </div>
             </div>
             <!--  -->
-             <div class="carousel-item">
+            <div class="carousel-item">
               <div class="testimonial-card comment-1">
                 <div class="user-info comment2">
                   <img src="img/Female 2.png" class="user-image" alt="" />
@@ -330,7 +352,7 @@
                 <img src="img/“.svg" class="quote" alt="" />
               </div>
             </div>
-           
+
             <!--  -->
             <div class="carousel-item">
               <div class="testimonial-card comment-1">
@@ -384,14 +406,13 @@
         </div> -->
       </section>
 
-          <div class="newsletter">
-          <h5>Sign up for our Newsletter</h5>
-          <div class="newsletterContent">
-            <input type="text" placeholder="Type your name here..." />
-            <button>Subscribe</button>
-          </div>
+      <div class="newsletter">
+        <h5>Sign up for our Newsletter</h5>
+        <div class="newsletterContent">
+          <input type="text" placeholder="Type your name here..." />
+          <button>Subscribe</button>
         </div>
-
+      </div>
     </main>
 
     <footer>
