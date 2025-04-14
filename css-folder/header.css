@@ -249,56 +249,6 @@ header nav {
 /* Tailor List */
 @media screen and (max-width: 768px) {
   .tailorNavbar {
-    padding: 1rem 1rem;
-
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 30px;
-      right: 0;
-      background-color: #fff;
-      width: 60%;
-      padding: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transform: translate(100%);
-      transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-links li {
-      margin: 10px 0;
-      text-align: center;
-    }
-
-    .hamburger {
-      display: flex;
-      cursor: pointer;
-    }
-
-    /* show close buton when menu is open */
-    .nav-links.active {
-      /* display: block; */
-      /* right: 0;  */
-    }
-
-    /* Show the menu when hamburger is clicked */
-    .nav-links.active {
-      display: flex;
-      gap: 10px;
-      transform: translateX(0);
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 25px;
-      font-size: 50px;
-      display: none;
-      cursor: pointer;
-    }
-
-    /* Hide register/login buttons on modile */
-    .btns-div {
-      display: none;
-    }
+    padding: 1rem;
   }
 }
