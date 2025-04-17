@@ -29,6 +29,7 @@ main {
 .first-sec {
   display: flex;
   justify-content: space-around;
+  padding: 0 3.5rem;
 }
 
 .fashion {
@@ -118,10 +119,10 @@ main {
 .third-sec {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(3, 240px);
+  grid-template-columns: repeat(3, 220px);
   row-gap: 50px;
   column-gap: 320px;
-  margin: 2rem;
+  padding: 0 3.5rem;
 
   .designCard {
     width: 400px;
@@ -521,8 +522,13 @@ main {
   input {
     color: #000;
     padding: 12px 20px;
+    outline: 1px solid #ecece0;
     border: 1px solid #ecece0;
-    /* width: 540px; */
+    width: 400px;
+  }
+
+  input:focus {
+    border: 1px solid #ecece0;
   }
 
   p {
@@ -550,6 +556,7 @@ main {
   /* <!-- first Section --> */
   .first-sec {
     flex-direction: column;
+    padding: 0;
   }
 
   .first-sec h2 {
@@ -610,8 +617,8 @@ main {
   /* <!-- third Section --> */
   .third-sec {
     width: 100%;
-    grid-template-columns: 1fr;
-    margin: 1rem;
+    grid-template-columns: 1fr 150px;
+    padding: 1rem;
     margin-top: 50px;
 
     button {
@@ -631,9 +638,6 @@ main {
   .storeDescription-1 {
     width: 80%;
   }
-
-
-
 
   /* fourth Section */
   .different {
@@ -722,6 +726,10 @@ main {
 
     .newsletterContent {
       gap: 0;
+    }
+
+    input {
+      width: 100px;
     }
 
     h5 {

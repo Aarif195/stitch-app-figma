@@ -21,7 +21,7 @@ body {
 
 .clothSize {
   background-color: var(--background-color);
-  padding: 3rem;
+  padding: 3.5rem;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -37,12 +37,14 @@ body {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
-  margin: 4rem;
+  /* margin: 2rem; */
+    padding:0 3.5rem;
+
 
   .searchInput {
     border: 1px solid var(--border-line);
     border-radius: 30px;
-    width: 500px;
+    /* width: 500px; */
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -58,6 +60,13 @@ body {
   input {
     border: none;
     padding: 4px 8px;
+    width: 420px;
+  }
+
+  input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
   }
 
   .location {
@@ -69,12 +78,25 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
+  select {
+   
+    border: none;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #2980b9;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .clothSize {
-margin: 0 1rem;
-padding: 2rem 3rem;
+    margin: 0 1rem;
+    padding: 2rem ;
 
     h3 {
       font-size: 24px;
@@ -83,13 +105,14 @@ padding: 2rem 3rem;
 
   .inputDiv {
     flex-direction: column;
-    margin: 3rem 1.4rem;
+    margin:   0;
     gap: 30px;
+    padding: 2rem 1rem;
 
     .searchInput,
     .location {
       width: 300px;
-      padding: 0.4rem;
+      padding: 0 1rem;
     }
   }
 }

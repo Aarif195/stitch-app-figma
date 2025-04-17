@@ -64,8 +64,8 @@ header nav {
 
 .shopping-cart,
 .fa-solid {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 .cart-icon {
@@ -80,14 +80,14 @@ header nav {
     border: 1.5px;
     border-radius: 50%;
     padding: 5px 5px;
-    background-color: red;
+    background-color: #1d364d;
     color: var(--secondary-color);
     display: flex;
     align-items: end;
     justify-content: center;
     width: 10px;
     height: 10px;
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -103,7 +103,7 @@ header nav {
   position: relative;
   width: 40px;
   height: 40px;
-  background-color: #c4c445;
+  background-color: #c0c0c0;
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -186,6 +186,99 @@ header nav {
 /* Tailor List */
 .tailorNavbar {
   background-color: var(--secondary-color);
+  /* border: 2px solid red; */
+
+  .btn-reg,
+  .btn-login {
+    display: none;
+  }
+
+  .shopping-cart {
+    background-color: #ededed;
+    padding:  5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-icon {
+    position: relative;
+    cursor: pointer;
+
+    .cart-badge {
+      position: absolute;
+      top: -7px;
+      right: -10px;
+      font-size: 10px;
+      border: 1.5px;
+      border-radius: 50%;
+      padding: 5px 5px;
+      background-color: #1d364d;
+      color: var(--secondary-color);
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      width: 10px;
+      height: 10px;
+      /* display: none; */
+    }
+  }
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /*  */
+    /* display: none; */
+  }
+
+  .avartar {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  .avartar .fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 40px;
+  }
+
+  .notification-dot {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .user-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    gap: 5px;
+  }
+
+  .greeting {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+  }
+
+  .username {
+    font-weight: bold;
+    color: #333;
+  }
 }
 
 /* Styles for smaller screens */

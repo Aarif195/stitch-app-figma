@@ -3,14 +3,16 @@ footer {
   display: flex;
   justify-content: space-between;
   background: var(--background-color);
-  padding: 1rem 3.5rem;
+  padding: 2rem 3.5rem;
   cursor: pointer;
+
 }
 
 .left-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
 .content-link {
@@ -19,7 +21,13 @@ footer {
   gap: 10px;
 }
 
-i {
+.icon-col {
+  display: flex;
+  gap: 20px;
+}
+ i {
+  display: flex;
+  gap: 20px;
   font-size: 22px;
 }
 
@@ -49,7 +57,7 @@ a {
   footer {
     flex-direction: column;
     gap: 50px;
-    padding: 1rem ;
+    padding:2.5rem 1rem ;
 
     .rigth-content {
       flex-direction: column;

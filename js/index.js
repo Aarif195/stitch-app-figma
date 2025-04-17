@@ -121,7 +121,7 @@ designerContainerSection.innerHTML = products
           <div class="distanceInfo">
             <div class="joblabel">                     <i class="fa-solid fa-location-dot"></i>
 
-              <p>job</p>
+              <p>Jabi</p>
             </div>
             <span>view on map</span>
           </div>

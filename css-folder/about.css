@@ -24,7 +24,8 @@ body {
 
 .mainContent {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem 3.5rem;
 
   .primaryContent {
     width: 500px;
@@ -134,9 +135,11 @@ body {
 .introSection {
   margin-top: 90px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
+    padding: 1rem 3.5rem;
+
 
   .primaryContent {
     width: 500px;
@@ -251,7 +254,7 @@ body {
 
     /* Line */
     .articleSectionLine {
-      /* width: 100; */
+      display: none;
     }
 
     .articleContent {
@@ -317,5 +320,6 @@ body {
     .team {
       font-size: 30px;
     }
+
   }
 }

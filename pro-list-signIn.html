@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css-folder/tailor.css" /> -->
+    <link rel="stylesheet" href="css-folder/header.css" />
+    <link rel="stylesheet" href="css-folder/footer.css" />
+    <link rel="stylesheet" href="css-folder/button.css" />
+    <link rel="stylesheet" href="css-folder/index.css" />
+    <link rel="stylesheet" href="css-folder/pro-list-signIn.css" />
+    <title>Product List Sign In</title>
+  </head>
+  <body>
+    <header>
+      <nav class="tailorNavbar">
+        <img src="img/Logo.png" alt="stitch-logo" class="logo" />
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pro-list-signIn.html">Shop</a></li>
+          <li><a href="tailor.html">Find Tailor</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="btns-div">
+          <div class="cart-icon">
+            <img
+              src="img/Frame 1000003466.svg"
+              alt="shopping-cart"
+              class="shopping-cart"
+            />
+            <span class="cart-badge">3</span>
+          </div>
+
+          <!-- Btnreg & BtnLogin -->
+          <button class="btn-reg"><a href="#">REGISTER</a></button>
+          <button class="btn-login"><a href="#">LOGIN</a></button>
+
+          <div class="user-profile">
+            <div class="avartar">
+              <div></div>
+              <span class="notification-dot"></span>
+
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user-text">
+              <p class="greeting">Good Morning!</p>
+              <span class="username">Grace Dan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Close Button -->
+        <div class="close-btn close" id="close-btn">&times;</div>
+      </nav>
+    </header>
+
+    <div class="clothwear">
+      <div class="clothSize">
+        <h3>Explore from our vast collection of wears.</h3>
+        <button class="btn-book">Buy Now</button>
+      </div>
+      <img src="img/My project 1.svg" alt="" />
+    </div>
+
+    <section>
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>Filter</h2>
+          <button class="clear-btn">Clear All</button>
+        </div>
+
+        <!-- Aside Category Content -->
+        <!-- CATEGORY SECTION -->
+        <div class="categoryContainer">
+          <div class="category">
+            <h4>Category</h4>
+            <img src="img/Vector (1).svg" alt="" />
+          </div>
+
+          <ul class="filter-list">
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Kid</span>
+                <span class="count">(18)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked />
+                <span class="label-text">Man</span>
+                <span class="count">(12)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked />
+                <span class="label-text">Woman</span>
+                <span class="count">(23)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Casual</span>
+                <span class="count">(67)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Sport</span>
+                <span class="count">(34)</span>
+              </label>
+            </li>
+          </ul>
+
+          <div class="moreOptionDiv">
+            <img src="img/Vector (2).svg" alt="" />
+            <a href="#" class="more-options">More Options</a>
+          </div>
+        </div>
+
+        <!-- BRAND SECTION -->
+        <div class="categoryContainer">
+          <div class="category">
+            <h4>Category</h4>
+            <img src="img/Vector (1).svg" alt="" />
+          </div>
+
+          <ul class="filter-list">
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Dee Store</span>
+                <span class="count">(18)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Nafataya</span>
+                <span class="count">(18)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" checked />
+                <span class="label-text">Atafo</span>
+                <span class="count">(23)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">My Shooed</span>
+                <span class="count">(67)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Florida Fox </span>
+                <span class="count">(34)</span>
+              </label>
+            </li>
+          </ul>
+
+          <div class="moreOptionDiv">
+            <img src="img/Vector (2).svg" alt="" />
+            <a href="#" class="more-options">More Options</a>
+          </div>
+        </div>
+        <!--RATING SECTION  -->
+        <div class="categoryContainer">
+          <div class="rating-section category">
+            <h3 class="filter-title">Ratings</h3>
+            <img src="img/Vector (1).svg" alt="" />
+          </div>
+          <ul class="filter-list">
+            <li>
+              <label>
+                <div class="left-content">
+                  <input type="radio" name="rating" />
+                  <span class="stars">★★★★★</span>
+                  <span class="label-text">4.5 & up</span>
+                </div>
+                <span class="count">(1999)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="left-content">
+                  <input type="radio" name="rating" checked />
+                  <span class="stars">★★★★★</span>
+                  <span class="label-text">4.0 & up</span>
+                </div>
+                <span class="count">(1453)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="left-content">
+                  <input type="radio" name="rating" />
+                  <span class="stars">★★★★★</span>
+                  <span class="label-text">3.5 & up</span>
+                </div>
+                <span class="count">(899)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="left-content">
+                  <input type="radio" name="rating" />
+                  <span class="stars">★★★★★</span>
+                  <!-- ☆☆ -->
+                  <span class="label-text">3.0 & up</span>
+                </div>
+                <span class="count">(670)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CLOTH SECTION -->
+        <div class="categoryContainer">
+          <div class="category">
+            <h4>Cloth</h4>
+            <img src="img/filter.svg" alt="" />
+          </div>
+
+          <ul class="filter-list">
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Cotton</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Linen</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Poly</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Oxford</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Checked Fox </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Floral Fox </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Weave Fox </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Knitted Fox </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="label-text">Knitted Fox </span>
+              </label>
+            </li>
+          </ul>
+
+          <div class="moreOptionDiv">
+            <img src="img/Vector (2).svg" alt="" />
+            <a href="#" class="more-options">More Options</a>
+          </div>
+        </div>
+
+        <!-- PRICERANGE -->
+        <div class="categoryContainer">
+          <div class="category">
+            <h4>Price</h4>
+            <img src="img/Vector (1).svg" alt="" />
+          </div>
+          <input type="range" id="slider" min="0" max="100" value="50" />
+
+          <div class="priceValue">
+            <span>0</span>
+            <span>$200</span>
+          </div>
+        </div>
+
+        <!-- PRICERANGE -->
+        <div class="categoryContainer">
+          <div class="category">
+            <h4>Size</h4>
+            <img src="img/Vector (1).svg" alt="" />
+          </div>
+          <input type="range" id="slider" min="0" max="100" value="50" />
+          <div class="priceValue">
+            <span>5</span>
+            <span>100</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- main-content -->
+      <div class="productGeneralContain">
+        <div class="main-content">
+          <div class="divinput">
+            <div class="searchInput">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search by store name"
+                name=""
+                id=""
+              />
+            </div>
+            <!--  -->
+            <div class="popular">
+              <select id="menu" name="menu">
+                <option value="home">Popularity</option>
+                <option value="about">Japan</option>
+                <option value="contact">India</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- image Product container -->
+        <div class="product-container">
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/pro-img.svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (1).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (2).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/pro-img.svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (1).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (2).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (1).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/pro-img.svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (3).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (2).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/pro-img.svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+          <div class="popular-designers">
+            <div class="hoverDiv">
+              <img src="img/Frame 1000003435 (1).svg" alt="" />
+
+              <div class="hoverState">
+                <img src="img/Vector (3).svg" alt="" />
+                <span>Get My Fit</span>
+                <img src="img/Vector-4.svg" alt="" />
+              </div>
+            </div>
+
+            <p>Crepe</p>
+            <h4>Pattern Crepe Long Dress</h4>
+            <h5>₦28, 000</h5>
+          </div>
+          <!--  -->
+        </div>
+
+        <div class="paginationControls">
+          <button class="previewButton shdw">Previews</button>
+          <div class="buttonPanel">
+            <button class="pageButton btn1">1</button>
+            <button class="pageButton">2</button>
+            <button class="pageButton">3</button>
+            <button class="pageButton">4</button>
+            <button class="pageButton">5</button>
+            <button class="pageButton">6</button>
+            <button class="pageButton">7</button>
+          </div>
+          <button class="nextButton shdw">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="letter">
+      <h5>Sign up for our Newsletter</h5>
+      <div class="newsletterContent">
+        <input type="text" placeholder="Type your name here..." />
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="left-content">
+        <img src="img/Logo.svg" alt="stitch-logo" class="logo" />
+
+        <div class="content-link">
+          <p>info@google.com</p>
+          <p>+234888595004</p>
+        </div>
+
+        <div class="icon-col">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+
+      <!-- <div class="rigth-content"> -->
+      <div class="col">
+        <h4>Shop</h4>
+        <a href="#">Create a Custom Size</a>
+        <a href="#">View Collection</a>
+        <a href="#">Accessories</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>About Us</h4>
+        <a href="#">Our Story</a>
+        <a href="#">Term & Conditions</a>
+        <a href="#">PrivacyPolicy</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>Help</h4>
+        <a href="#">How to Care for Wears</a>
+        <a href="#">Common Fit problems</a>
+        <a href="#">How to Measure Your body</a>
+        <a href="#">Shopping</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>Support</h4>
+        <a href="#">Track an Existing Order</a>
+        <a href="#">Style Advice</a>
+        <a href="#">Schedule a Fitting</a>
+        <a href="#">Contact us</a>
+        <a href="#">Track an Existing Order</a>
+      </div>
+      <!--  -->
+      <!-- </div> -->
+    </footer>
+        <script src="js/header.js"></script>
+    <script src="js/pro-list.js"></script>
+  </body>
+</html>
