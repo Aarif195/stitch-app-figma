@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css-folder/index.css" />
+    <link rel="stylesheet" href="css-folder/header.css" />
+    <link rel="stylesheet" href="css-folder/button.css" />
+    <link rel="stylesheet" href="css-folder/product.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="tailorNavbar">
+        <img src="img/Logo.png" alt="stitch-logo" class="logo" />
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pro-list-signIn.html">Shop</a></li>
+          <li><a href="tailor.html">Find Tailor</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="btns-div">
+          <div class="cart-icon">
+            <img
+              src="img/shopping-cart.png"
+              alt="shopping-cart"
+              class="shopping-cart"
+            />
+            <span class="cart-badge">3</span>
+          </div>
+
+          <!-- Btnreg & BtnLogin -->
+          <button class="btn-reg"><a href="#">REGISTER</a></button>
+          <button class="btn-login"><a href="#">LOGIN</a></button>
+
+          <div class="user-profile">
+            <div class="avartar">
+              <div></div>
+              <span class="notification-dot"></span>
+
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user-text">
+              <p class="greeting">Good Morning!</p>
+              <span class="username">Grace Dan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Close Button -->
+        <div class="close-btn close" id="close-btn">&times;</div>
+      </nav>
+    </header>
+
+    <div class="product-section">
+      <div class="breadcrumb">Home > Shop > Women's Dresses</div>
+
+      <div class="product-container">
+        <div class="product-images">
+          <img
+            src="img/image.svg"
+            alt="Multi-colored flared gown"
+            class="main-image"
+          />
+
+          <div class="thumbnails">
+            <img src="img/image (1).svg" alt="Thumb 1" />
+            <img src="img/image (1).svg" alt="Thumb 2" />
+            <img src="img/image (1).svg" alt="Thumb 3" />
+            <img src="img/image (1).svg" alt="Thumb 4" />
+            <img src="img/image (1).svg" alt="Thumb 4" />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <p class="name">Fashion Store</p>
+          <h2 class="multi">Multi-colored flared gown</h2>
+
+          <!--  -->
+          <div class="priceTag">
+            <div>
+              <p class="price">
+                <span class="old-price">₦35,000</span>
+                <span class="new-price">₦28,000</span>
+              </p>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 2rem">
+              <p class="sold">1,679 Sold</p>
+              <p class="star">★ <span class="rating">4.5</span></p>
+            </div>
+          </div>
+
+          <hr class="dotted-line" />
+
+          <!--  -->
+          <h4 class="descriptionhead">Description:</h4>
+          <p class="description">
+            Make a statement in this stunning multicolored flared dress. The
+            bold colors and elegant silhouette create a truly eye-catching
+            piece. Whether you're attending a cocktail party or a special
+            occasion, this dress will ensure you turn heads..
+          </p>
+
+          <div class="color-selection">
+            <p class="label">Color: <span class="labelMulti">Multi</span></p>
+
+            <!--  -->
+            <div class="colors">
+              <div class="circle-border">
+                <div class="circle-inner color-dot-1"></div>
+              </div>
+              <div class="circle-border">
+                <div class="circle-inner color-dot-2"></div>
+              </div>
+              <div class="circle-border">
+                <div class="circle-inner color-dot-3"></div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+
+          <!-- ChatBox -->
+          <div class="chatBox">
+            <p>Chat with Store owner</p>
+            <img src="img/Vector.svg" alt="" />
+          </div>
+
+          <!-- Size Div -->
+          <div class="size">
+            <p>Size: <span>8</span></p>
+            <p class="request">Request Measurement</p>
+            <p class="request">View Size Chart</p>
+          </div>
+
+          <!-- Button Page -->
+          <div class="size-selection">
+            <button class="size-number">6</button>
+            <button class="size-number">8</button>
+            <button class="size-number">10</button>
+            <button class="size-number">14</button>
+            <button class="size-number">18</button>
+            <button class="size-number">20</button>
+          </div>
+
+          <div class="product-buttons">
+            <button class="add-to-cart">Add To Cart</button>
+            <button class="checkout-now">Checkout Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rating/Review Container -->
+    <div class="container">
+      <div class="tabs">
+        <div class="tab">Description</div>
+        <div class="tab active">Reviews</div>
+      </div>
+
+      <div class="product-reviews">
+        <h3 class="productreviewsh3">Product Reviews</h3>
+
+        <div class="rating-summary">
+          <div class="reviewedComment">
+            <div class="rating-score">4.5</div>
+            <div>
+              <span class="stars">★★★★★</span>
+              <p class="review">from 1,25k reviews</p>
+            </div>
+          </div>
+
+          <div class="bars">
+            <div class="bar">
+              <span>5.0</span>
+              <div class="bar-line">
+                <div class="bar-fill" style="width: 95%"></div>
+              </div>
+              <div class="bar-count">2823</div>
+            </div>
+            <div class="bar">
+              <span>4.0</span>
+              <div class="bar-line">
+                <div class="bar-fill" style="width: 35%"></div>
+              </div>
+              <div class="bar-count">38</div>
+            </div>
+            <div class="bar">
+              <span>3.0</span>
+              <div class="bar-line">
+                <div class="bar-fill" style="width: 10%"></div>
+              </div>
+              <div class="bar-count">4</div>
+            </div>
+            <div class="bar">
+              <span>2.0</span>
+              <div class="bar-line">
+                <div class="bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="bar-count">0</div>
+            </div>
+            <div class="bar">
+              <span>1.0</span>
+              <div class="bar-line">
+                <div class="bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="bar-count">0</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterContainer">
+          <h4 class="reviewListNames">Review Lists</h4>
+          <div class="review-filters">
+            <button class="allreview">All Reviews</button>
+            <button>With Photos & Video</button>
+            <button>With Description</button>
+          </div>
+
+          <div class="review-list">
+            <div class="review">
+              <span class="stars">★★★★★</span>
+
+              <div class="great">
+                <p class="review-text">Great quality</p>
+                <p class="reviewDate">July 2, 2024</p>
+              </div>
+
+              <div class="reviewer">
+                <img src="img/Ellipse 14.svg" alt="" />
+                Grace Dan
+              </div>
+            </div>
+
+            <div class="review">
+              <span class="stars">★★★★★</span>
+              <div class="great">
+                <p class="review-text">Absolutely lovely dress</p>
+                <p class="reviewDate">July 2, 2024</p>
+              </div>
+              <div class="reviewer">
+                <img src="img/Ellipse 14.svg" alt="" />
+                Gracie Dara
+              </div>
+            </div>
+
+            <div class="review">
+              <span class="stars">★★★★★</span>
+              <div class="great">
+                <p class="review-text">Great quality</p>
+                <p class="reviewDate">July 2, 2024</p>
+              </div>
+              <div class="reviewer">
+                <img src="img/Ellipse 14.svg" alt="" />
+                James David
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related View -->
+    <div class="relatedView">
+      <p>Related Wears</p>
+      <a href="#">View All</a>
+    </div>
+
+    <section>
+      <div>
+        <img src="img/Frame 204.svg" alt=""/>
+        <div class="divv">
+          <p>Sequin</p>
+          <span>₦26, 000</span>
+          <h6>Patterned Crepe Long Dress</h6>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="js/header.js"></script>
+  </body>
+</html>

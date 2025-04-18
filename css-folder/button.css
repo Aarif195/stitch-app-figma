@@ -95,6 +95,43 @@
   cursor: pointer;
 }
 
+/* PRODUCT LIST PAGE */
+.size-selection {
+  margin-top: 20px;
+}
+.size-selection button {
+  padding: 14px 36px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  color: #525252;
+  background: #fff;
+}
+
+.product-buttons {
+  margin-top: 2rem;
+}
+
+.product-buttons button {
+
+  cursor: pointer;
+}
+
+.add-to-cart {
+  padding: 17px 99px;
+  border-radius: 800px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.checkout-now {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 17px 30px;
+  border-radius: 800px;
+  border: 1px solid #245949;
+}
+
 /* MOBILE DESIGN */
 @media screen and (max-width: 768px) {
   /* Find Tailor Page */
@@ -115,4 +152,14 @@
       width: 270px;
     }
   }
+
+
+  /* PRODUCT LIST PAGE */
+.size-selection {
+  margin-top: 30px;
+}
+
+.size-selection button {
+  padding: 10px 26px;
+}
 }

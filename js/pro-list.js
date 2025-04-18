@@ -16,16 +16,19 @@ productContainer.addEventListener("click", () => {
 });
 
 //
-const slider = document.getElementById("slider");
+const sliders = document.querySelectorAll(".slider");
 
-function updateSliderBackground(value) {
-  slider.style.background = `linear-gradient(to right, #28a745 ${value}%, #ccc ${value}%)`;
+function updateSliderBackground(slider) {
+  const value = slider.value;
+  slider.style.background = `linear-gradient(to right, #245949 ${value}%, #ccc ${value}%)`;
 }
 
-// Initial setup
-updateSliderBackground(slider.value);
+sliders.forEach((slider) => {
+  // Initial background
+  updateSliderBackground(slider);
 
-// Update on change
-slider.addEventListener("input", function () {
-  updateSliderBackground(this.value);
+  // Update on input
+  slider.addEventListener("input", function () {
+    updateSliderBackground(this);
+  });
 });
