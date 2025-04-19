@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css-folder/header.css" />
     <link rel="stylesheet" href="css-folder/button.css" />
     <link rel="stylesheet" href="css-folder/product.css" />
+    <link rel="stylesheet" href="css-folder/footer.css" />
   </head>
   <body>
     <header>
@@ -61,31 +62,81 @@
     </header>
 
     <div class="product-section">
-      <div class="breadcrumb">Home > Shop > Women's Dresses</div>
+      <!-- <div class="breadcrumb">Home > Shop > Women's Dresses</div> -->
 
       <div class="product-container">
-        <div class="product-images">
-          <img
-            src="img/image.svg"
-            alt="Multi-colored flared gown"
-            class="main-image"
-          />
+        <!-- <div class="gallery-container">
+          <div class="main-image-wrapper">
+            <img
+              id="mainImage"
+              src="img/image.svg"
+              class="main-image"
+              alt="Main Image"
+            />
+            <img
+              src="img/Line (Stroke).svg"
+              alt=""
+              class="arrow left"
+              onclick="scrollThumbnails(-1)"
+            />
+            <img
+              src="img/Line (Stroke) (1).svg"
+              alt=""
+              class="arrow right"
+              onclick="scrollThumbnails(1)"
+            />
+          </div> -->
 
-          <div class="thumbnails">
-            <img src="img/image (1).svg" alt="Thumb 1" />
-            <img src="img/image (1).svg" alt="Thumb 2" />
-            <img src="img/image (1).svg" alt="Thumb 3" />
-            <img src="img/image (1).svg" alt="Thumb 4" />
-            <img src="img/image (1).svg" alt="Thumb 4" />
+          <!-- <div class="thumbnail-carousel-wrapper">
+            <div class="thumbnail-container" id="thumbnailContainer">
+              <img
+                src="img/image (1).svg"
+                class="thumbnail"
+                onclick="setMainImage(this.src)"
+              />
+              <img
+                src="img/image (1).svg"
+                class="thumbnail"
+                onclick="setMainImage(this.src)"
+              />
+              <img
+                src="img/image (1).svg"
+                class="thumbnail"
+                onclick="setMainImage(this.src)"
+              />
+              <img
+                src="img/image (1).svg"
+                class="thumbnail"
+                onclick="setMainImage(this.src)"
+              />
+              <img
+                src="img/image (1).svg"
+                class="thumbnail"
+                onclick="setMainImage(this.src)"
+              />
+              <img
+                src="img/image (1).svg"
+                class="thumbnail"
+                onclick="setMainImage(this.src)"
+              />
+              <img
+                src="img/image (1).svg"
+                class="thumbnail"
+                onclick="setMainImage(this.src)"
+              />
+          
+          
+            </div>
           </div>
-        </div>
 
-        <div class="product-details">
+        </div> -->
+
+        <!-- <div class="product-details">
           <p class="name">Fashion Store</p>
-          <h2 class="multi">Multi-colored flared gown</h2>
+          <h2 class="multi">Multi-colored flared gown</h2> -->
 
           <!--  -->
-          <div class="priceTag">
+          <!-- <div class="priceTag">
             <div>
               <p class="price">
                 <span class="old-price">₦35,000</span>
@@ -97,12 +148,12 @@
               <p class="sold">1,679 Sold</p>
               <p class="star">★ <span class="rating">4.5</span></p>
             </div>
-          </div>
+          </div> -->
 
-          <hr class="dotted-line" />
+          <!-- <hr class="dotted-line" /> -->
 
           <!--  -->
-          <h4 class="descriptionhead">Description:</h4>
+          <!-- <h4 class="descriptionhead">Description:</h4>
           <p class="description">
             Make a statement in this stunning multicolored flared dress. The
             bold colors and elegant silhouette create a truly eye-catching
@@ -111,10 +162,10 @@
           </p>
 
           <div class="color-selection">
-            <p class="label">Color: <span class="labelMulti">Multi</span></p>
+            <p class="label">Color: <span class="labelMulti">Multi</span></p> -->
 
             <!--  -->
-            <div class="colors">
+            <!-- <div class="colors">
               <div class="circle-border">
                 <div class="circle-inner color-dot-1"></div>
               </div>
@@ -125,24 +176,23 @@
                 <div class="circle-inner color-dot-3"></div>
               </div>
             </div>
-            <!--  -->
-          </div>
+          </div> -->
 
           <!-- ChatBox -->
-          <div class="chatBox">
-            <p>Chat with Store owner</p>
-            <img src="img/Vector.svg" alt="" />
-          </div>
+          <!-- <div class="chatBox">
+            <p class="storeOwner">Chat with Store owner</p>
+            <img src="img/Vector.svg" alt="" class="storeImage" />
+          </div> -->
 
           <!-- Size Div -->
-          <div class="size">
-            <p>Size: <span>8</span></p>
+          <!-- <div class="size">
+            <p class="sizze">Size: <span class="sizeNO">8</span></p>
             <p class="request">Request Measurement</p>
             <p class="request">View Size Chart</p>
-          </div>
+          </div> -->
 
           <!-- Button Page -->
-          <div class="size-selection">
+          <!-- <div class="size-selection">
             <button class="size-number">6</button>
             <button class="size-number">8</button>
             <button class="size-number">10</button>
@@ -155,7 +205,7 @@
             <button class="add-to-cart">Add To Cart</button>
             <button class="checkout-now">Checkout Now</button>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -169,98 +219,100 @@
       <div class="product-reviews">
         <h3 class="productreviewsh3">Product Reviews</h3>
 
-        <div class="rating-summary">
-          <div class="reviewedComment">
-            <div class="rating-score">4.5</div>
-            <div>
-              <span class="stars">★★★★★</span>
-              <p class="review">from 1,25k reviews</p>
+        <div class="ratingContainer">
+          <div class="rating-summary">
+            <div class="reviewedComment">
+              <div class="rating-score">4.5</div>
+              <div>
+                <span class="stars">★★★★★</span>
+                <p class="review">from 1,25k reviews</p>
+              </div>
+            </div>
+
+            <div class="bars">
+              <div class="bar">
+                <span>5.0</span>
+                <div class="bar-line">
+                  <div class="bar-fill" style="width: 95%"></div>
+                </div>
+                <div class="bar-count">2823</div>
+              </div>
+              <div class="bar">
+                <span>4.0</span>
+                <div class="bar-line">
+                  <div class="bar-fill" style="width: 35%"></div>
+                </div>
+                <div class="bar-count">38</div>
+              </div>
+              <div class="bar">
+                <span>3.0</span>
+                <div class="bar-line">
+                  <div class="bar-fill" style="width: 10%"></div>
+                </div>
+                <div class="bar-count">4</div>
+              </div>
+              <div class="bar">
+                <span>2.0</span>
+                <div class="bar-line">
+                  <div class="bar-fill" style="width: 0%"></div>
+                </div>
+                <div class="bar-count">0</div>
+              </div>
+              <div class="bar">
+                <span>1.0</span>
+                <div class="bar-line">
+                  <div class="bar-fill" style="width: 0%"></div>
+                </div>
+                <div class="bar-count">0</div>
+              </div>
             </div>
           </div>
 
-          <div class="bars">
-            <div class="bar">
-              <span>5.0</span>
-              <div class="bar-line">
-                <div class="bar-fill" style="width: 95%"></div>
-              </div>
-              <div class="bar-count">2823</div>
-            </div>
-            <div class="bar">
-              <span>4.0</span>
-              <div class="bar-line">
-                <div class="bar-fill" style="width: 35%"></div>
-              </div>
-              <div class="bar-count">38</div>
-            </div>
-            <div class="bar">
-              <span>3.0</span>
-              <div class="bar-line">
-                <div class="bar-fill" style="width: 10%"></div>
-              </div>
-              <div class="bar-count">4</div>
-            </div>
-            <div class="bar">
-              <span>2.0</span>
-              <div class="bar-line">
-                <div class="bar-fill" style="width: 0%"></div>
-              </div>
-              <div class="bar-count">0</div>
-            </div>
-            <div class="bar">
-              <span>1.0</span>
-              <div class="bar-line">
-                <div class="bar-fill" style="width: 0%"></div>
-              </div>
-              <div class="bar-count">0</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="filterContainer">
-          <h4 class="reviewListNames">Review Lists</h4>
-          <div class="review-filters">
-            <button class="allreview">All Reviews</button>
-            <button>With Photos & Video</button>
-            <button>With Description</button>
-          </div>
-
-          <div class="review-list">
-            <div class="review">
-              <span class="stars">★★★★★</span>
-
-              <div class="great">
-                <p class="review-text">Great quality</p>
-                <p class="reviewDate">July 2, 2024</p>
-              </div>
-
-              <div class="reviewer">
-                <img src="img/Ellipse 14.svg" alt="" />
-                Grace Dan
-              </div>
+          <div class="filterContainer">
+            <h4 class="reviewListNames">Review Lists</h4>
+            <div class="review-filters">
+              <button class="allreview">All Reviews</button>
+              <button>With Photos & Video</button>
+              <button>With Description</button>
             </div>
 
-            <div class="review">
-              <span class="stars">★★★★★</span>
-              <div class="great">
-                <p class="review-text">Absolutely lovely dress</p>
-                <p class="reviewDate">July 2, 2024</p>
-              </div>
-              <div class="reviewer">
-                <img src="img/Ellipse 14.svg" alt="" />
-                Gracie Dara
-              </div>
-            </div>
+            <div class="review-list">
+              <div class="review">
+                <span class="stars">★★★★★</span>
 
-            <div class="review">
-              <span class="stars">★★★★★</span>
-              <div class="great">
-                <p class="review-text">Great quality</p>
-                <p class="reviewDate">July 2, 2024</p>
+                <div class="great">
+                  <p class="review-text">Great quality</p>
+                  <p class="reviewDate">July 2, 2024</p>
+                </div>
+
+                <div class="reviewer">
+                  <img src="img/Ellipse 14.svg" alt="" />
+                  Grace Dan
+                </div>
               </div>
-              <div class="reviewer">
-                <img src="img/Ellipse 14.svg" alt="" />
-                James David
+
+              <div class="review">
+                <span class="stars">★★★★★</span>
+                <div class="great">
+                  <p class="review-text">lovely dress</p>
+                  <p class="reviewDate">July 2, 2024</p>
+                </div>
+                <div class="reviewer">
+                  <img src="img/Ellipse 14.svg" alt="" />
+                  Gracie Dara
+                </div>
+              </div>
+
+              <div class="review">
+                <span class="stars">★★★★★</span>
+                <div class="great">
+                  <p class="review-text">Absolute Great</p>
+                  <p class="reviewDate">July 2, 2024</p>
+                </div>
+                <div class="reviewer">
+                  <img src="img/Ellipse 14.svg" alt="" />
+                  James David
+                </div>
               </div>
             </div>
           </div>
@@ -276,16 +328,128 @@
 
     <section>
       <div>
-        <img src="img/Frame 204.svg" alt=""/>
+        <img src="img/Frame 204.svg" alt="" />
         <div class="divv">
           <p>Sequin</p>
           <span>₦26, 000</span>
           <h6>Patterned Crepe Long Dress</h6>
         </div>
+        <div class="we">
+          <p class="star">★ <span class="rating">4.5</span></p>
+          <p class="sold">1,679 Sold</p>
+        </div>
       </div>
+      <!--  -->
+      <div>
+        <img src="img/image 28 (1).svg" alt="" />
+        <div class="divv">
+          <p>Sequin</p>
+          <span>₦26, 000</span>
+          <h6>Patterned Crepe Long Dress</h6>
+        </div>
+        <div class="we">
+          <p class="star">★ <span class="rating">4.5</span></p>
+          <p class="sold">1,679 Sold</p>
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <img src="img/image 28.svg" alt="" />
+        <div class="divv">
+          <p>Sequin</p>
+          <span>₦26, 000</span>
+          <h6>Patterned Crepe Long Dress</h6>
+        </div>
+        <div class="we">
+          <p class="star">★ <span class="rating">4.5</span></p>
+          <p class="sold">1,679 Sold</p>
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <img src="img/Frame 204.svg" alt="" />
+        <div class="divv">
+          <p>Sequin</p>
+          <span>₦26, 000</span>
+          <h6>Patterned Crepe Long Dress</h6>
+        </div>
+        <div class="we">
+          <p class="star">★ <span class="rating">4.5</span></p>
+          <p class="sold">1,679 Sold</p>
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <img src="img/image 28 (2).svg" alt="" />
+        <div class="divv">
+          <p>Sequin</p>
+          <span>₦26, 000</span>
+          <h6>Patterned Crepe Long Dress</h6>
+        </div>
+        <div class="we">
+          <p class="star">★ <span class="rating">4.5</span></p>
+          <p class="sold">1,679 Sold</p>
+        </div>
+      </div>
+      <!--  -->
     </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="left-content">
+        <img src="img/Logo.svg" alt="stitch-logo" class="logo" />
+
+        <div class="content-link">
+          <p>info@google.com</p>
+          <p>+234888595004</p>
+        </div>
+
+        <div class="icon-col">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <!-- <div class="rigth-content"> -->
+      <div class="col">
+        <h4>Shop</h4>
+        <a href="#">Create a Custom Size</a>
+        <a href="#">View Collection</a>
+        <a href="#">Accessories</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>About Us</h4>
+        <a href="#">Our Story</a>
+        <a href="#">Term & Conditions</a>
+        <a href="#">PrivacyPolicy</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>Help</h4>
+        <a href="#">How to Care for Wears</a>
+        <a href="#">Common Fit problems</a>
+        <a href="#">How to Measure Your body</a>
+        <a href="#">Shopping</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>Support</h4>
+        <a href="#">Track an Existing Order</a>
+        <a href="#">Style Advice</a>
+        <a href="#">Schedule a Fitting</a>
+        <a href="#">Contact us</a>
+        <a href="#">Track an Existing Order</a>
+      </div>
+      <!--  -->
+      <!-- </div> -->
+    </footer>
 
     <!-- Script -->
     <script src="js/header.js"></script>
+    <script src="js/product.js"></script>
   </body>
 </html>

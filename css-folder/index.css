@@ -279,7 +279,7 @@ main {
 .fifth-sec {
   margin-top: 60px;
   display: flex;
-
+  padding: 0 3.5rem;
   justify-content: center;
   gap: 130px;
 
@@ -626,6 +626,8 @@ main {
     }
   }
 
+
+
   .designCardImg {
     width: 345px;
     display: block;
@@ -675,13 +677,13 @@ main {
   .fifth-sec,
   .sixth-sec {
     flex-direction: column;
-    margin: 1.5rem;
+    padding: 1rem;
     margin-top: 70px;
     gap: 35px;
 
     img {
       display: block;
-      width: 325px;
+      width: 340px;
     }
 
     .popular-designers h4 {
@@ -690,7 +692,7 @@ main {
   }
 
   .fifth-sec {
-    width: 325px;
+    width: 340px;
   }
 
   .sixth-sec {
