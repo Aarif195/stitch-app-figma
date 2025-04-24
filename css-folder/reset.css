@@ -1,0 +1,64 @@
+/* Manrope Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+
+  background: #ecece0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 6rem auto;
+  /* padding: 2rem 0rem;  */
+}
+
+section {
+  width: 500px;
+  min-height: 400px;
+  background-color: #fff;
+  border: 1px solid #ecece0;
+  border-radius: 10px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img {
+  width: 124px;
+  height: 124px;
+}
+
+p {
+  color: #333333;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+/* MOBILE DESIGN */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 .4rem;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+
+  p {
+    font-size: 26px;
+  }
+}

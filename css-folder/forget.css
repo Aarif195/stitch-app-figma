@@ -1,0 +1,123 @@
+/* Manrope Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+
+  background: #ecece0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 6rem auto;
+  /* padding: 2rem 0rem;  */
+}
+
+section {
+  width: 500px;
+  min-height: 450px;
+  background-color: #fff;
+  border: 1px solid #66666680;
+  border-radius: 10px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.stitchLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.stitchLogo p {
+  color: #245949;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.forgot {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.new-signup {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+
+h3 {
+  font-weight: 500;
+  font-size: 32px;
+  /* margin-bottom: 5px; */
+  color: #333333;
+  font-family: "Manrope", sans-serif;
+}
+
+ .forgot p {
+  color: #000000;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-input label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+  font-family: "Manrope", sans-serif;
+}
+
+.form-input input {
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.form-input input:focus {
+  border: 1px solid #ccc;
+}
+
+.hide-icon {
+  display: flex;
+  justify-content: space-between  ;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.sign-para {
+  color: #333333;
+}
+
+/* MOBILE RESP */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0rem 1rem;
+  }
+
+}

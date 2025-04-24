@@ -1,6 +1,4 @@
-// function setMainImage(src) {
-//   document.getElementById("mainImage").src = src;
-// }
+
 
 //
 const productContainer = document.querySelector(".product-container");
@@ -10,8 +8,8 @@ const productDetails = [
   {
     breadcrumb: "Home > Shop > Women's Dresses",
     productImage: "img/image.svg",
-    arrowLeft: "img/Line (Stroke).svg",
-    arrowright: "img/Line (Stroke) (1).svg",
+    arrowLeft: "img/arrow-left.svg",
+    arrowright: "img/arrow-right.svg",
     productsImages: "img/image (1).svg",
     name: "Fashion Store",
     multi: "Multi-colored flared gown",

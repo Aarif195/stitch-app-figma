@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details</title>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css-folder/index.css" />
     <link rel="stylesheet" href="css-folder/header.css" />
     <link rel="stylesheet" href="css-folder/button.css" />
@@ -11,22 +15,23 @@
     <link rel="stylesheet" href="css-folder/footer.css" />
   </head>
   <body>
-    <header>
+  
+  <header>
       <nav class="tailorNavbar">
         <img src="img/Logo.png" alt="stitch-logo" class="logo" />
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="pro-list-signIn.html">Shop</a></li>
+          <li><a href="product-list-signIn.html">Shop</a></li>
           <li><a href="tailor.html">Find Tailor</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
         <div class="btns-div">
-          <div class="cart-icon">
+          <div class="cart-icon iconss">
             <img
-              src="img/shopping-cart.png"
+              src="img/mdi_cart-outline.svg"
               alt="shopping-cart"
-              class="shopping-cart"
+              class="mdi-cart"
             />
             <span class="cart-badge">3</span>
           </div>
@@ -60,12 +65,11 @@
         <div class="close-btn close" id="close-btn">&times;</div>
       </nav>
     </header>
-
     <div class="product-section">
-      <!-- <div class="breadcrumb">Home > Shop > Women's Dresses</div> -->
+      <div class="breadcrumb">Home > Shop > Women's Dresses</div> 
 
       <div class="product-container">
-        <!-- <div class="gallery-container">
+         <div class="gallery-container">
           <div class="main-image-wrapper">
             <img
               id="mainImage"
@@ -73,21 +77,22 @@
               class="main-image"
               alt="Main Image"
             />
+
             <img
-              src="img/Line (Stroke).svg"
+              src="img/arrow-left.svg"
               alt=""
               class="arrow left"
               onclick="scrollThumbnails(-1)"
             />
             <img
-              src="img/Line (Stroke) (1).svg"
+              src="img/arrow-right.svg"
               alt=""
               class="arrow right"
               onclick="scrollThumbnails(1)"
             />
-          </div> -->
+          </div> 
 
-          <!-- <div class="thumbnail-carousel-wrapper">
+          <div class="thumbnail-carousel-wrapper">
             <div class="thumbnail-container" id="thumbnailContainer">
               <img
                 src="img/image (1).svg"
@@ -125,18 +130,17 @@
                 onclick="setMainImage(this.src)"
               />
           
-          
             </div>
           </div>
 
-        </div> -->
+        </div> 
 
-        <!-- <div class="product-details">
+        <div class="product-details">
           <p class="name">Fashion Store</p>
-          <h2 class="multi">Multi-colored flared gown</h2> -->
+          <h2 class="multi">Multi-colored flared gown</h2>
 
           <!--  -->
-          <!-- <div class="priceTag">
+          <div class="priceTag">
             <div>
               <p class="price">
                 <span class="old-price">₦35,000</span>
@@ -148,12 +152,12 @@
               <p class="sold">1,679 Sold</p>
               <p class="star">★ <span class="rating">4.5</span></p>
             </div>
-          </div> -->
+          </div>
 
           <!-- <hr class="dotted-line" /> -->
 
           <!--  -->
-          <!-- <h4 class="descriptionhead">Description:</h4>
+          <h4 class="descriptionhead">Description:</h4>
           <p class="description">
             Make a statement in this stunning multicolored flared dress. The
             bold colors and elegant silhouette create a truly eye-catching
@@ -162,10 +166,10 @@
           </p>
 
           <div class="color-selection">
-            <p class="label">Color: <span class="labelMulti">Multi</span></p> -->
+            <p class="label">Color: <span class="labelMulti">Multi</span></p>
 
             <!--  -->
-            <!-- <div class="colors">
+            <div class="colors">
               <div class="circle-border">
                 <div class="circle-inner color-dot-1"></div>
               </div>
@@ -176,23 +180,23 @@
                 <div class="circle-inner color-dot-3"></div>
               </div>
             </div>
-          </div> -->
+          </div> 
 
           <!-- ChatBox -->
-          <!-- <div class="chatBox">
+           <div class="chatBox">
             <p class="storeOwner">Chat with Store owner</p>
             <img src="img/Vector.svg" alt="" class="storeImage" />
-          </div> -->
+          </div> 
 
           <!-- Size Div -->
-          <!-- <div class="size">
+           <div class="size">
             <p class="sizze">Size: <span class="sizeNO">8</span></p>
             <p class="request">Request Measurement</p>
             <p class="request">View Size Chart</p>
-          </div> -->
+          </div> 
 
           <!-- Button Page -->
-          <!-- <div class="size-selection">
+           <div class="size-selection">
             <button class="size-number">6</button>
             <button class="size-number">8</button>
             <button class="size-number">10</button>
@@ -205,7 +209,7 @@
             <button class="add-to-cart">Add To Cart</button>
             <button class="checkout-now">Checkout Now</button>
           </div>
-        </div> -->
+        </div> 
       </div>
     </div>
 
@@ -222,7 +226,9 @@
         <div class="ratingContainer">
           <div class="rating-summary">
             <div class="reviewedComment">
-              <div class="rating-score">4.5</div>
+              <div class="rating-score">
+                <p> 4.5</p>
+               </div>
               <div>
                 <span class="stars">★★★★★</span>
                 <p class="review">from 1,25k reviews</p>

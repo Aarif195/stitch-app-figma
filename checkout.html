@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-folder/checkout.css" />
+    <link rel="stylesheet" href="css-folder/button.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <main>
+      <!-- product-list -->
+      <section class="product-list">
+        <div class="productContent">
+          <p>Item</p>
+          <p>Size</p>
+          <p>Price</p>
+        </div>
+
+        <div class="product__card">
+          <div class="prodGrid">
+            <div class="product-item">
+              <div>
+                <img src="img/Rectangle 22.svg" alt="" class="product-img" />
+                <span class="product-span">1</span>
+              </div>
+
+              <p>Peplum long dress</p>
+              <span>8</span>
+            </div>
+            <p class="price">₦24000</p>
+          </div>
+          <!--  -->
+
+          <div class="prodGrid">
+            <div class="product-item">
+              <div>
+                <img src="img/Rectangle 22.svg" alt="" class="product-img" />
+                <span class="product-span">1</span>
+              </div>
+
+              <p>Peplum long dress</p>
+              <span>8</span>
+            </div>
+            <p class="price">₦24000</p>
+          </div>
+
+          <div class="prodGrid">
+            <div class="product-item">
+              <div>
+                <img src="img/Rectangle 22.svg" alt="" class="product-img" />
+                <span class="product-span">1</span>
+              </div>
+
+              <p>Peplum long dress</p>
+              <span>8</span>
+            </div>
+            <p class="price">₦24000</p>
+          </div>
+          <!--  -->
+        </div>
+
+        <hr style="margin-top: 30px" />
+        <div class="itemcontainer">
+          <div>
+            <div class="itemCost">
+              <div class="chargeInfo">
+                <p>Sub Total</p>
+                <span>₦96,000</span>
+              </div>
+              <div class="chargeInfo" id="chargeInfo">
+                <p>Shipping</p>
+                <span>₦2,000</span>
+              </div>
+            </div>
+
+            <hr style="margin-bottom: 30px" />
+
+            <div class="totalAmount" id="chargeInfo">
+              <p>Total</p>
+              <span>₦98,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+      </section>
+
+      <!-- Addresses, card & Number -->
+      <section class="billing-address">
+        <div class="billing">
+          <h3>Billing Address</h3>
+          <p>Select the address that matches your card or payment method.</p>
+        </div>
+
+        <div class="radioContent">
+          <div class="radioBox">
+            <input type="radio" checked />
+            <label for="">Same as shipping Address</label>
+          </div>
+
+          <div class="radioBox">
+            <input type="radio" />
+            <label for="">Use Different Billing Address</label>
+          </div>
+        </div>
+
+        <!-- Payemnt  -->
+        <div class="billing payemnt">
+          <h3>Payment</h3>
+          <p>All transactions are secure and encrypted.</p>
+        </div>
+
+        <!-- Card Payment -->
+        <div class="cardpayment">
+          <div class="paymentLine">
+            <div class="radioBox metricsBox">
+              <input type="radio" checked />
+              <label for="">Credit Card</label>
+            </div>
+
+            <div class="bankCard">
+              <img src="img/visa.svg" alt="" />
+              <img src="img/mastercard.svg" alt="" />
+              <img src="img/Vector (4).svg" alt="" />
+            </div>
+          </div>
+
+          <div class="cardsMome">
+            <div class="cards">
+              <p>Card Number</p>
+              <img src="img/Vector (5).svg" alt="" />
+            </div>
+
+            <div class="cards">
+              <p>Name on Card</p>
+              <img src="img/Vector (5).svg" alt="" />
+            </div>
+
+            <div class="cards cardo">
+              <p class="cardExpDate">Expiration Date (YY / MM)</p>
+              <div class="security">
+                <p class="cardExpDate">Security Code</p>
+                <img src="img/icon.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="completebuttons">
+          <button class="backBtn">Back</button>
+          <button class="comBtn" id="comBtn">Complete Order</button>
+        </div>
+      </section>
+    </main>
+
+    <!--  paymentBox-->
+    <div class="paymentBox" id="paymentBox">
+      <img src="img/bro.svg" alt="" />
+      <h4>Payment Successful</h4>
+      <p>Thank you for your purchase</p>
+
+      <div class="orderview-receipt">
+        <button class="orderBtn"><a href="#">View Order</a></button>
+        <button class="receiptBtn"><a href="#">View Receipt</a> </button>
+      </div>
+    </div>
+
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

@@ -1,3 +1,17 @@
+/* Public San */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+
+/* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 .btns-div button {
   padding: 12px 20px;
   border-radius: 800px;
@@ -25,12 +39,14 @@
   background: var(--primary-color);
   color: var(--secondary-color);
   border: 1px solid var(--primary-color);
+  cursor: pointer;
 }
 
 .btn-create {
   background: var(--secondary-color);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  cursor: pointer;
 }
 
 /* Tailor List Button Page styles */
@@ -49,6 +65,7 @@
   justify-content: center;
   gap: 40px;
   padding: 5rem 1rem;
+  cursor: pointer;
 
   button {
     border-radius: 4px;
@@ -78,6 +95,7 @@
   background: var(--primary-color);
   color: var(--secondary-color);
   border: 1px solid var(--primary-color);
+  cursor: pointer;
 }
 
 .btn-explore a {
@@ -112,7 +130,6 @@
 }
 
 .product-buttons button {
-
   cursor: pointer;
 }
 
@@ -127,9 +144,215 @@
 .checkout-now {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  padding: 17px 30px;
+  padding: 20px 30px;
   border-radius: 800px;
   border: 1px solid #245949;
+}
+
+/* Size Recommendation*/
+.btn-block {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+
+  #open-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 17px 70px;
+    border-radius: 800px;
+    border: 1px solid #245949;
+    cursor: pointer;
+  }
+}
+
+.proceed-div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.proceed-btn {
+  border: 1px solid #245949;
+  border-radius: 800px;
+  padding: 15px 40px;
+  color: #245949;
+  background-color: #ecece0;
+}
+
+/* CheckOut */
+.completebuttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.backBtn {
+  background-color: var(#ecece0);
+  color: var(--primary-color);
+  padding: 17px 50px;
+  border-radius: 800px;
+  border: 1px solid #245949;
+  cursor: pointer;
+}
+
+.comBtn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 17px 40px;
+  border-radius: 800px;
+  border: 1px solid #245949;
+  cursor: pointer;
+}
+
+/* payment Succesful Page */
+.orderview-receipt {
+  margin-top: 30px;
+}
+
+.orderview-receipt a {
+  text-decoration: none;
+}
+
+.orderBtn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 17px 40px;
+  border-radius: 800px;
+  border: 1px solid #245949;
+  cursor: pointer;
+}
+
+.orderBtn a {
+  color: var(--secondary-color);
+}
+
+.receiptBtn {
+  background: #ecece0;
+  color: var(--primary-color);
+  padding: 17px 40px;
+  border-radius: 800px;
+  border: 1px solid #245949;
+  cursor: pointer;
+}
+
+.receiptBtn a {
+  color: var(--primary-color);
+}
+
+/* SIGNUP PAGE */
+.signupdiv {
+  button {
+    border-radius: 40px;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    background-color: #245949;
+    padding: 8px 88px;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+      font-family: "Manrope", sans-serif;
+    }
+  }
+}
+
+/* SIGNUP PAGE */
+.signindiv {
+  button {
+    border-radius: 40px;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    background-color: #245949;
+    padding: 8px 88px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.sign-para a {
+  text-decoration: underline 1px solid #666666;
+  color: #666666;
+}
+
+/* signinBtn */
+.signinBtn {
+  border-radius: 40px;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  background-color: #e4e4e4;
+  padding: 12px 77px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+     font-family: "Manrope", sans-serif;
+     font-size: 20px;
+     font-weight: 400;
+  }
+}
+
+#sign-para {
+  margin-top: 20px;
+}
+
+/* SendBtnDiv */
+.sendBtn {
+  button {
+    border-radius: 40px;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Manrope", sans-serif;
+    background-color: #245949;
+    padding: 8px 88px;
+    cursor: pointer;
+    text-align: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: "Manrope", sans-serif;
+    }
+  }
+}
+
+.sendBtn .sign-para {
+  margin-top: 10px;
+}
+
+/* Password Reset Page */
+section {
+  button {
+    background: #245949;
+    color: #fff;
+    padding: 12px 55px;
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Manrope", sans-serif;
+  }
 }
 
 /* MOBILE DESIGN */
@@ -153,13 +376,42 @@
     }
   }
 
-
   /* PRODUCT LIST PAGE */
-.size-selection {
-  margin-top: 30px;
-}
+  .size-selection {
+    margin-top: 30px;
+  }
 
-.size-selection button {
-  padding: 10px 26px;
-}
+  .size-selection button {
+    padding: 10px 26px;
+  }
+
+  /* Size Recommendation*/
+  .btn-block {
+    /* width: 200px; */
+    flex-direction: column;
+  }
+
+  /* SIGNUP PAGE */
+  .signupdiv {
+    button {
+      padding: 4px 24px;
+      width: 100%;
+    }
+  }
+
+  .signinBtn {
+    width: 100%;
+  }
+
+  #sign-para {
+    text-align: center;
+  }
+
+  /* SendBtnDiv */
+  .sendBtn {
+    button {
+      padding: 8px 78px;
+      cursor: pointer;
+    }
+  }
 }

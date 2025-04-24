@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-folder/size.css" />
+    <link rel="stylesheet" href="css-folder/button.css" />
+    <title>Size Recommendation</title>
+  </head>
+  <body>
+    <section>
+      <h3>Find Your Perfect Fit</h3>
+      <h6>Enter your measurements for personalized size recommendations</h6>
+
+      <article>
+        <form>
+          <h4>Select Gender</h4>
+
+          <div class="radioCon">
+            <div class="labelDiv">
+              <div class="radio-active">
+                <input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  id="femaleRadio"
+                  required
+                  checked
+                />
+                <label for="">Female</label>
+              </div>
+
+              <div class="radio-active">
+                <input
+                  type="radio"
+                  name="gender"
+                  value="not_click"
+                  id="maleRadio"
+                />
+                <label for="">Male</label>
+              </div>
+            </div>
+
+            <div class="select-option">
+              <select id="menu" name="menu">
+                <option value="home">Gown</option>
+                <option value="about">Ankara</option>
+                <option value="contact">Lace</option>
+              </select>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="form-group" id="form-group">
+            <div class="form-input">
+              <label for="height">Height(cm)</label>
+              <input type="text" />
+            </div>
+
+            <div class="form-input">
+              <label for="bust" id="bust">Bust(cm)</label>
+              <input type="text" id="height" />
+            </div>
+            <!--  -->
+            <div class="form-input">
+              <label for="waist" id="waist">Waist(cm)</label>
+              <input type="text" id="waist" />
+            </div>
+
+            <div class="form-input" id="hipsGroup">
+              <label for="hips">Hips(cm)</label>
+              <input type="text" id="hips" />
+            </div>
+            <!--  -->
+            <div class="form-input">
+              <label for="sleeve length">Sleeve length(cm)</label>
+              <input type="text" id="sleeve length" />
+            </div>
+
+            <div class="form-input">
+              <label for=" height">Shoulder (cm)</label>
+              <input type="text" id="sleeve length" />
+            </div>
+          </div>
+
+          <div class="btn-block">
+            <button type="submit" id="open-btn">Save</button>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <div class="modalContainer" id="modalContainer">
+      <h5>Product: Women's Maxi Dress</h5>
+      <p>
+        Based on your measurements and the style of the Women's Maxi Dress, we
+        recommend a size Medium. The relaxed fit of this dress should
+        accommodate your measurements comfortably. However, if you prefer a more
+        fitted look, you might consider sizing down to a Small.
+      </p>
+
+      <div class="proceed-div">
+        <button class="proceed-btn">Proceed</button>
+      </div>
+    </div>
+
+    <script src="js/size.js"></script>
+  </body>
+</html>
