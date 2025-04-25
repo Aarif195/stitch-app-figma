@@ -625,7 +625,7 @@ main {
   /* <!-- third Section --> */
   /* Third */
   .third {
-    grid-template-columns: 1fr 150px;
+    grid-template-columns: 1fr;
     padding: 0 1rem;
     gap: 20px;
 
