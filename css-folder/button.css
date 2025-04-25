@@ -1,13 +1,8 @@
 /* Public San */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-
 /* Poppins Font */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-
-
 
 /* Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
@@ -48,6 +43,23 @@
   border: 1px solid var(--primary-color);
   cursor: pointer;
 }
+
+
+  .chatbutton {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+      border-radius: 800px;
+  }
+
+  .bookbutton {
+    background: var(--background-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+        padding: 12px 45px;
+  }
+
+
 
 /* Tailor List Button Page styles */
 .btn-book {
@@ -244,7 +256,7 @@
 .signupdiv {
   button {
     border-radius: 40px;
-    border: none;
+    border: 1px solid transparent;
     font-size: 22px;
     font-weight: 500;
     font-family: "Manrope", sans-serif;
@@ -258,6 +270,15 @@
       font-size: 22px;
       font-weight: 500;
       font-family: "Manrope", sans-serif;
+    }
+  }
+
+  button:hover {
+    border: 1px solid #245949;
+    background: white;
+
+    a {
+      color: #245949;
     }
   }
 }
@@ -276,6 +297,15 @@
   a {
     text-decoration: none;
     color: #fff;
+  }
+
+  button:hover {
+    border: 1px solid #245949;
+    background: white;
+
+    a {
+      color: #245949;
+    }
   }
 }
 
@@ -298,9 +328,9 @@
   a {
     text-decoration: none;
     color: #fff;
-     font-family: "Manrope", sans-serif;
-     font-size: 20px;
-     font-weight: 400;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
   }
 }
 
@@ -329,6 +359,17 @@
       font-family: "Manrope", sans-serif;
     }
   }
+
+  button:hover {
+    border: 1px solid #245949;
+    background: white;
+
+    a {
+       color: #245949;
+    }
+  }
+
+
 }
 
 .sendBtn .sign-para {
@@ -353,6 +394,16 @@ section {
     font-weight: 600;
     font-family: "Manrope", sans-serif;
   }
+
+  button:hover {
+    border: 1px solid #245949;
+    background: white;
+
+    a {
+       color: #245949;
+    }
+  }
+
 }
 
 /* MOBILE DESIGN */
@@ -365,14 +416,14 @@ section {
 
     .previewButton,
     .nextButton {
-      /* width: 280px; */
+      width: 230px;
     }
 
     .buttonPanel {
       /* padding:  1rem ; */
       /* display: flex; */
       /* gap: 5px; */
-      width: 270px;
+      /* width: 270px; */
     }
   }
 

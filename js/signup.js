@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const designerBtn = document.querySelector(".designer");
   const userBtn = document.querySelector(".user");
+  const yes = document.querySelectorAll(".yes");
+  console.log(yes);
 
   // FORM // Gender Selection Form
   const phoneLabel = document.getElementById("phone");
   const storeLabel = document.getElementById("store");
   const locationLabel = document.getElementById("address");
-
 
   designerBtn.addEventListener("click", () => {
     // designerBtn.classList.add("active");
@@ -14,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     designerBtn.style.backgroundColor = "#245949";
     designerBtn.style.color = "white";
 
-   userBtn.style.backgroundColor = "#ECECE0";
-   userBtn.style.color = "#245949";
+    userBtn.style.backgroundColor = "#ECECE0";
+    userBtn.style.color = "#245949";
 
     // Change styles if needed
     // document.body.style.backgroundColor = "green";
@@ -43,9 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //  document.body.style.color = "green";
 
     // Modify labels
-    phoneLabel.style.display = "none";
-    storeLabel.textContent = "Email Address";
+    // phoneLabel.style.display = "none";
+    // storeLabel.textContent = "Email Address";
+
     locationLabel.textContent = "Location";
   });
 });
-

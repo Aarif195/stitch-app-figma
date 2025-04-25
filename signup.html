@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-folder/button.css" />
+    <link rel="stylesheet" href="css-folder/signup.css" />
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <main>
+      <section class="logo-section">
+
+
+        <div class="stitchLogo">
+          <a href="index.html"><img src="img/Self.svg" alt="" /></a>
+          <p><a href="index.html">Stitch</a></p>
+        </div>
+
+        <h4 class="">Discover the perfect fit with Stitch</h4>
+
+        <img src="img/amico.svg" class="amico" alt="" />
+      </section>
+
+      <!--  -->
+
+      <section class="form-section">
+        <h4>Sign Up Now</h4>
+        <div class="designer-user">
+          <p class="designer">Designer</p>
+          <p class="user">User</p>
+        </div>
+
+        <form action="">
+          <div class="form-grid">
+            <div class="form-input">
+              <label for="firstName" id="firstName">First Name</label>
+              <input type="text" id="firstName" />
+            </div>
+
+            <div class="form-input">
+              <label for="lastName" id="lastName">Last Name</label>
+              <input type="text" id="lastName" />
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="form-grid"> -->
+            <div class="form-input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=""
+                required
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="phone" id="phone">Phone </label>
+              <input type="tel" name="phone" placeholder="" required />
+            </div>
+          </div>
+          <!--  -->
+          <div class="nameInput ">
+            <div class="form-input">
+              <label for="store" id="store" class="yes"> Store Name</label>
+              <input type="text" name="store" placeholder="" class="yes" required />
+            </div>
+
+            <div class="form-input">
+              <label for="address" id="address"> Address/Location</label>
+              <input type="text" name="address" placeholder="" required />
+            </div>
+
+            <div class="form-input">
+              <div class="passwor-hide">
+                <label for="Password"> Password</label>
+                <div class="hide-icon">
+                  <img src="img/Group 1.svg" alt="" />
+                  <label for="Password"> Hide</label>
+                </div>
+              </div>
+
+              <input
+                type="password"
+                id="Password"
+                name="Password"
+                placeholder=""
+                required
+              />
+              <p class="password-note">
+                Use 8 or more characters with a mix of letters, numbers &
+                symbols
+              </p>
+            </div>
+          </div>
+
+          <!--  -->
+          <label class="custom-checkbox">
+            <input type="checkbox" checked />
+            <span class="checkmark"></span>
+            <p class="terms">
+              By creating an account, I agree to our
+              <a href="#">Terms of use</a> and <a href="#">Privacy Policy </a>
+            </p>
+          </label>
+
+          <div class="signupdiv">
+            <button><a href="#">Sign up</a></button>
+            <p class="sign-para">
+              Already have an ccount? <a href="login.html">Log in </a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/signup.js"></script>
+  </body>
+</html>

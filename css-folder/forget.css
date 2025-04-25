@@ -46,10 +46,9 @@ section {
   gap: 15px;
 }
 
-.stitchLogo p {
+.stitchLogo p a {
   color: #245949;
-  font-family: Montserrat;
-  font-size: 28px;
+  font-family: "Manrope", sans-serif;  font-size: 28px;
   font-weight: 700;
 }
 

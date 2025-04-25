@@ -9,7 +9,7 @@
 //   box.style.backgroundColor = "transparent)";
 // });
 
-const designerContainerSection = document.querySelector(".third-sec");
+const designerContainerSection = document.querySelector(".third");
 console.log(designerContainerSection);
 
 const products = [
@@ -103,9 +103,9 @@ designerContainerSection.innerHTML = products
   .map(
     (product) => `
 
- <div class="designCard">
+ <div class="designCards">
           <img src="img/${product.image1}" class="designCardImg" alt="" />
-          <div class="store">
+          <div class="store left">
             <h5>${product.name}</h5>
             <div>
                           <i class="fa-solid fa-bookmark"></i>
@@ -114,11 +114,11 @@ designerContainerSection.innerHTML = products
 
             </div>
           </div>
-          <p class="storeDescription-1">
+          <p class="storeDescription-1 left">
            ${product.paragraph1}
           </p>
 
-          <div class="distanceInfo">
+          <div class="distanceInfo left">
             <div class="joblabel">                     <i class="fa-solid fa-location-dot"></i>
 
               <p>Jabi</p>
@@ -126,10 +126,12 @@ designerContainerSection.innerHTML = products
             <span>view on map</span>
           </div>
 
-          <p class="storeDescription-2">${product.paragrapgh2} </p>
+          <p class="storeDescription-2 left" >${product.paragrapgh2} </p>
 
+           <div class="left">
           <button class="chatbutton">${product.button1}</button>
           <button class="bookbutton">${product.button2}</button>
+           </div>
         </div>
         
 `

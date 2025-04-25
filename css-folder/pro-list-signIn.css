@@ -273,6 +273,7 @@ section {
     input {
       border: none;
       padding: 4px 8px;
+      font-size: 20px;
     }
 
     input:focus {
@@ -285,7 +286,7 @@ section {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 31%);
-    gap: 2rem;
+    gap: 3rem;
 
     .popular-designers {
       width: 100%;
@@ -380,28 +381,79 @@ section {
     border-radius: 30px;
     width: 300px;
     padding: 1rem;
-    /* color: #1d364d; */
+    display: flex;
+    justify-content: space-between;
   }
 
-  select {
-    border: none;
-    background-color: white;
-    color: #333;
+  .popular label {
+    font-size: 20px;
+  }
+
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: "Manrope", sans-serif;
+  }
+
+  /* Toggle Button */
+  .dropdown-label {
+    /* background-color: #1d364d; */
+    color: #245949;
+    padding: 10px 15px;
+    border-radius: 6px;
     cursor: pointer;
+    /* display: flex; */
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
   }
 
-  select:focus {
-    outline: none;
-    /* border-color: #2980b9; */
+  /* Arrow */
+  .dropdown-label .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
   }
 
-  option {
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 125%;
+    /* left: 20%; */
+    right: -42%;
+    min-width: 290px;
     background-color: #245949;
-    color: #ecece0;
-    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
   }
 
-  
+  .dropdown-menu li {
+    list-style: none;
+  }
+
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #e0e0e0;
+  }
+
+  /* Show menu when checkbox is checked */
+  #dropdown-toggle:checked + .dropdown-label + .dropdown-menu {
+    display: block;
+  }
+
+  /* Rotate arrow */
+  #dropdown-toggle:checked + .dropdown-label .arrow {
+    transform: rotate(180deg);
+  }
 }
 
 /* newsletter */
@@ -476,7 +528,7 @@ section {
     margin-top: 20px;
     flex-direction: column;
     gap: 10px;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 
     .sidebar {
       width: 260px;
@@ -486,7 +538,8 @@ section {
       width: 100%;
 
       .searchInput {
-        width: 85%;
+        width: 100%;
+        gap: 10px;
       }
     }
 
@@ -495,10 +548,20 @@ section {
       flex-direction: column;
       gap: 30px;
       width: 100%;
+
+      input {
+        font-size: 15px;
+      }
     }
 
     .popular {
-      width: 270px;
+      width: 100%;
+
+      /* Dropdown Menu */
+      .dropdown-menu {
+        width: 30px;
+        /* left: 0%; */
+      }
     }
 
     /*  main-content */
@@ -512,10 +575,11 @@ section {
 
       .popular-designers {
         width: 305px;
+        width: 100%;
       }
 
       img {
-        width: 305px;
+        /* width: 305px; */
         /* height: 122px; */
       }
 
@@ -542,7 +606,7 @@ section {
     }
 
     input {
-      width: 100px;
+      width: 80%;
     }
 
     h5 {
@@ -555,5 +619,9 @@ section {
 
   .shdw {
     width: 280px;
+  }
+
+  .categoryContainer {
+    padding: 0 5px;
   }
 }

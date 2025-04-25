@@ -3,6 +3,9 @@
 /* BArlow Font */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
+/* Monteserrat */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +31,7 @@ main {
 /* <!-- first Section --> */
 .first-sec {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 3.5rem;
   margin-top: 50px;
 }
@@ -93,7 +96,8 @@ main {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
-  margin: 4rem;
+  /* margin: 4rem; */
+  padding: 0 3.5rem;
 
   p {
     font-size: 20px;
@@ -117,49 +121,64 @@ main {
 }
 
 /* third-sec */
-.third-sec {
-  margin-top: 60px;
+.third {
+  margin-top: 50px;
+  /* display: flex; */
+  /* justify-content: space-between; */
   display: grid;
-  grid-template-columns: repeat(3, 220px);
-  row-gap: 50px;
-  column-gap: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
   padding: 0 3.5rem;
 
-  .designCard {
-    width: 400px;
-  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
 
-  .designCardImg {
+    object-fit: cover;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
 
-  .store {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
+  .left {
+    padding: 0 1rem;
   }
 
-  .joblabel {
-    display: flex;
-    
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
+  .designCards {
+    border: 1px solid #ecece0;
+    /* width: 484px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 
-    i {
-      width: 18px;
-      height: 20px;
-    }
+    padding-bottom: 20px;
+  }
+
+  .store {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 84%; */
+  }
+
+  .store h5 {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Playfair Display;
+  }
+
+  .storeDescription-1 {
+    color: #3e3e3e;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 10px;
+    /* width: 50%; */
   }
 
   .distanceInfo {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     gap: 10px;
-    width: 240px;
-    height: 30px;
     align-items: center;
   }
 
@@ -167,7 +186,6 @@ main {
     font-weight: 400;
     font-size: 15px;
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
   }
 
   .distanceInfo span {
@@ -176,38 +194,25 @@ main {
     color: var(--primary-color);
   }
 
-  .storeDescription-1 {
-    color: #3e3e3e;
-    font-weight: 400;
-    font-size: 10px;
-    /* margin-top: 5px; */
+  .joblabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .storeDescription-2 {
-    margin-top: 5px;
+    margin-top: 15px;
     font-weight: 400;
     font-size: 10px;
     color: #8c8c8c;
   }
 
   button {
-    margin-top: 20px;
-    border-radius: 800px;
-    padding: 12px 45px;
-  }
-
-  .chatbutton {
-    background: var(--primary-color);
-    border: none;
-    color: #fff;
-  }
-
-  .bookbutton {
-    background: var(--background-color);
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    margin-top: 25px;
   }
 }
+
+/* border: 2px solid red; */
 
 /* fourth Section   */
 .different {
@@ -280,8 +285,7 @@ main {
   margin-top: 60px;
   display: flex;
   padding: 0 3.5rem;
-  justify-content: center;
-  gap: 130px;
+  justify-content: space-around;
 
   .popular-designers {
     border-radius: 8px;
@@ -331,6 +335,7 @@ main {
   /* justify-content: space-between; */
   /* margin: 4rem; */
   justify-content: center;
+  /* padding: 0 3.5rem; */
   gap: 130px;
 
   img {
@@ -348,6 +353,7 @@ main {
     font-size: 12px;
     font-family: Montserrat;
     margin-top: 10px;
+    /* width: 50%; */
   }
 
   .popular-designers h4 {
@@ -557,6 +563,7 @@ main {
   .first-sec {
     flex-direction: column;
     padding: 0;
+    margin-top: 0;
   }
 
   .first-sec h2 {
@@ -564,12 +571,12 @@ main {
   }
 
   .fashion {
-    width: 90%;
+    width: 100%;
     padding: 0rem 1rem;
   }
 
   .fashion p {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
   }
 
@@ -606,7 +613,8 @@ main {
   /* top related Div */
   .top-designer,
   .popular-designs {
-    margin: 2rem;
+    /* margin: 2rem; */
+    padding: 0 1rem;
 
     p,
     a {
@@ -615,30 +623,20 @@ main {
   }
 
   /* <!-- third Section --> */
-  .third-sec {
-    width: 100%;
+  /* Third */
+  .third {
     grid-template-columns: 1fr 150px;
-    padding: 1rem;
-    margin-top: 50px;
+    padding: 0 1rem;
+    gap: 20px;
 
-    button {
-      margin-top: 15px;
+    .designCards {
+      width: 340px;
     }
-  }
 
-
-
-  .designCardImg {
-    width: 345px;
-    display: block;
-  }
-
-  .store {
-    flex-direction: column;
-    gap: 5px;
-  }
-  .storeDescription-1 {
-    width: 80%;
+    .cardimg {
+      width: 338px;
+      display: block;
+    }
   }
 
   /* fourth Section */
@@ -683,7 +681,7 @@ main {
 
     img {
       display: block;
-      width: 340px;
+      width: 341px;
     }
 
     .popular-designers h4 {
@@ -698,6 +696,11 @@ main {
   .sixth-sec {
     .popular-designers h5 {
       width: 350px;
+    }
+
+    img {
+      display: block;
+      width: 340px;
     }
   }
 

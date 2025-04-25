@@ -16,12 +16,16 @@
   <body>
     <header>
       <nav class="tailorNavbar">
-        <img src="img/Logo.png" alt="stitch-logo" class="logo" />
+        <div class="stitchLogo">
+          <a href="index.html"><img src="img/Self.svg" alt="" /></a>
+          <p><a href="index.html">Stitch</a></p>
+        </div>
+
         <ul class="nav-links" id="nav-links">
-          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="product-list-signIn.html">Shop</a></li>
-          <li><a href="tailor.html">Find Tailor</a></li>
+          <li><a href="#">Find Tailor</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
         <div class="btns-div">
@@ -35,8 +39,8 @@
           </div>
 
           <!-- Btnreg & BtnLogin -->
-          <button class="btn-reg"><a href="index.html">REGISTER</a></button>
-          <button class="btn-login"><a href="signin.html">LOGIN</a></button>
+          <button class="btn-reg"><a href="signup.html">REGISTER</a></button>
+          <button class="btn-login"><a href="login.html">LOGIN</a></button>
 
           <div class="user-profile">
             <div class="avartar">
@@ -76,34 +80,50 @@
           <input type="text" placeholder="Search by store name" name="" id="" />
         </div>
         <!--  -->
-        <div class="location">
-          <input type="text" placeholder=" Location " name="" id="" />
 
-          <select id="menu" name="menu">
-            <option value="home">China</option>
-            <option value="about">Japan</option>
-            <option value="contact">India</option>
-          </select>
+        <div class="location">
+         <label for="">location</label>
+
+<!-- &#9662; -->
+
+          <div class="custom-dropdown">
+            <input type="checkbox" id="dropdown-toggle" hidden />
+            <label for="dropdown-toggle" class="dropdown-label">
+               <span class="arrow">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </label>
+            <ul class="dropdown-menu">
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">Cameroon</a></li>
+              <li><a href="#">America</a></li>
+            </ul>
+          </div>
+
+
         </div>
       </div>
 
       <!-- third-Section fron index.html -->
-      <section class="third-sec">
-        <!-- <div class="designCard">
-          <img src="img/Frame 1000003458.svg" class="designCardImg" alt="" />
-          <div class="store">
+      <section class="third">
+        <!-- <div class="designCards">
+          <img src="img/Frame 1000003458.svg" class="cardimg" alt="" />
+
+          <div class="store left">
             <h5>Dee Store</h5>
-            <div>
+            <div style="display: flex; gap: 10px">
               <i class="fa-solid fa-bookmark"></i>
               <i class="fa-solid fa-share-nodes"></i>
             </div>
           </div>
-          <p class="storeDescription-1">
+
+          <p class="storeDescription-1 left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            aliquid inventore eaque.
+            aliquid inventore eaque. consectetur adipisicing elit. Eius aliquid
+            inventore eaque.
           </p>
 
-          <div class="distanceInfo">
+          <div class="distanceInfo left">
             <div class="joblabel">
               <i class="fa-solid fa-location-dot"></i>
               <p>Jabi</p>
@@ -111,11 +131,13 @@
             <span>view on map</span>
           </div>
 
-          <p class="storeDescription-2">2km from your location</p>
-
-          <button class="chatbutton">Chat</button>
-          <button class="bookbutton">Book</button>
-        </div>  -->
+          <p class="storeDescription-2 left">2km from your location</p>
+          <div class="left">
+            <button class="chatbutton">Chat</button>
+            <button class="bookbutton">Book</button>
+          </div>
+        </div> -->
+        <!--  -->
       </section>
 
       <div class="paginationControls">

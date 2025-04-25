@@ -38,8 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   /* margin: 2rem; */
-    padding:0 3.5rem;
-
+  padding: 0 3.5rem;
 
   .searchInput {
     border: 1px solid var(--border-line);
@@ -61,6 +60,7 @@ body {
     border: none;
     padding: 4px 8px;
     width: 420px;
+    font-size: 18px;
   }
 
   input:focus {
@@ -68,35 +68,90 @@ body {
     border: none;
     box-shadow: none;
   }
+}
 
-  .location {
-    border: 1px solid var(--border-line);
-    border-radius: 30px;
-    width: 300px;
-    padding: 1rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.location {
+  /* border: 1px solid var(--border-line); */
+  border: 1px solid #989898;
+  border-radius: 30px;
+  width: 300px;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
 
-  select {
-   
-    border: none;
-    background-color: white;
-    color: #333;
-    cursor: pointer;
-  }
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Manrope", sans-serif;
+}
 
-  select:focus {
-    outline: none;
-    border-color: #2980b9;
-  }
+/* Toggle Button */
+.dropdown-label {
+  /* background-color: #1d364d; */
+  color: #245949;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  /* display: flex; */
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+}
+
+/* Arrow */
+.dropdown-label .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 145%;
+  /* left: -1%; */
+  right: -51%;
+  min-width: 290px;
+  background-color: #245949;
+  border-radius: 8px;
+  padding: 10px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Show menu when checkbox is checked */
+#dropdown-toggle:checked + .dropdown-label + .dropdown-menu {
+  display: block;
+}
+
+/* Rotate arrow */
+#dropdown-toggle:checked + .dropdown-label .arrow {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 768px) {
   .clothSize {
     margin: 0 1rem;
-    padding: 2rem ;
+    padding: 2rem;
 
     h3 {
       font-size: 24px;
@@ -105,14 +160,20 @@ body {
 
   .inputDiv {
     flex-direction: column;
-    margin:   0;
+    margin: 0;
     gap: 30px;
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
+    margin-top: 20px;
 
     .searchInput,
     .location {
       width: 300px;
-      padding: 0 1rem;
+      padding: 0.4rem;
     }
+  }
+
+  .dropdown-menu {
+    width: 290px;
+    right: -21%;
   }
 }
