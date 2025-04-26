@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+
     <link rel="stylesheet" href="css-folder/button.css" />
     <link rel="stylesheet" href="css-folder/signup.css" />
   
@@ -29,7 +36,7 @@
 
         <!--  -->
         <form action="" class="form-sign">
-            <div class="form-input">
+            <div class="form-inputs">
           <div class="name-input">
             <div class="form-input">
               <label for="email" id="email"> Email</label>
@@ -37,7 +44,30 @@
             </div>
             </div>
 
-            <div class="name-input">
+            <!--  -->
+   <div class="form-input">
+          <div class="passwor-hide">
+            <label for="Password"> Password</label>
+            <div class="hide-icon" id="togglePassword">
+              <!-- <img src="img/Group 1.svg" id="eyeIcon" alt="" /> -->
+              <i class="fa fa-eye-slash" id="eyeIcon" aria-hidden="true"></i>
+
+              <span id="toggleText">Hide</span>
+            </div>
+          </div>
+
+          <input
+            type="password"
+            id="Password"
+            name="Password"
+            placeholder=""
+            required
+          />
+        </div>
+
+
+
+            <!-- <div class="name-input">
             <div class="passwor-hide" id="password-hide">
               <label for="Password" class="madhh"> Password</label>
               <div class="hide-icon">
@@ -53,7 +83,7 @@
               placeholder=""
               required
             />
-          </div>
+          </div> -->
 
           <div class="password-forgot">
             <a href="forget.html">Forgot password?</a>
@@ -69,6 +99,7 @@
       </section>
     </main>
 
-    <script src="js/signup.js"></script>
+    <!-- <script src="js/signup.js"></script> -->
+     <script src="js/login.js"></script>
   </body>
 </html>

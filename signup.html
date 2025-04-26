@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="css-folder/button.css" />
     <link rel="stylesheet" href="css-folder/signup.css" />
     <title>Sign Up Page</title>
@@ -10,8 +16,6 @@
   <body>
     <main>
       <section class="logo-section">
-
-
         <div class="stitchLogo">
           <a href="index.html"><img src="img/Self.svg" alt="" /></a>
           <p><a href="index.html">Stitch</a></p>
@@ -62,10 +66,16 @@
             </div>
           </div>
           <!--  -->
-          <div class="nameInput ">
+          <div class="nameInput">
             <div class="form-input">
               <label for="store" id="store" class="yes"> Store Name</label>
-              <input type="text" name="store" placeholder="" class="yes" required />
+              <input
+                type="text"
+                name="store"
+                placeholder=""
+                class="yes"
+                required
+              />
             </div>
 
             <div class="form-input">
@@ -73,12 +83,19 @@
               <input type="text" name="address" placeholder="" required />
             </div>
 
+            <!--  -->
             <div class="form-input">
               <div class="passwor-hide">
                 <label for="Password"> Password</label>
-                <div class="hide-icon">
-                  <img src="img/Group 1.svg" alt="" />
-                  <label for="Password"> Hide</label>
+                <div class="hide-icon" id="togglePassword">
+                  <!-- <img src="img/Group 1.svg" id="eyeIcon" alt="" /> -->
+                  <i
+                    class="fa fa-eye-slash"
+                    id="eyeIcon"
+                    aria-hidden="true"
+                  ></i>
+
+                  <span id="toggleText">Hide</span>
                 </div>
               </div>
 
@@ -94,6 +111,8 @@
                 symbols
               </p>
             </div>
+
+            
           </div>
 
           <!--  -->

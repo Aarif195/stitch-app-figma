@@ -141,6 +141,14 @@ form {
   margin-top: 20px;
 }
 
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
 .form-grid {
   display: grid;
   /* grid-template-columns: repeat(2, 210px); */
@@ -223,6 +231,9 @@ form {
   font-family: "Manrope", sans-serif;
   margin-top: 5px;
 }
+
+
+
 
 /* Checkbox */
 .custom-checkbox {
@@ -318,6 +329,15 @@ form {
 #form-section {
   width: 500px;
 }
+
+#togglePassword {
+  color: #666666CC;
+}
+
+#toggleText {
+color: #666666CC;
+}
+
 
 /* MOBILE RESP */
 @media screen and (max-width: 768px) {

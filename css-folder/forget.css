@@ -106,6 +106,17 @@ h3 {
   justify-content: space-between  ;
   align-items: center;
   gap: 5px;
+  color: #666666CC;
+
+}
+
+
+#togglePassword {
+  color: #666666CC;
+}
+
+#toggleText {
+color: #666666CC;
 }
 
 
