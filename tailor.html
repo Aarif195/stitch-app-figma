@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css-folder/tailor.css" />
     <link rel="stylesheet" href="css-folder/header.css" />
     <link rel="stylesheet" href="css-folder/button.css" />
+    <link rel="stylesheet" href="css-folder/footer.css" />
     <link rel="stylesheet" href="css-folder/index.css" />
     <title>Tailor List</title>
   </head>
   <body>
     <header>
-      <nav class="tailorNavbar">
+      <nav class="">
         <div class="stitchLogo">
           <a href="index.html"><img src="img/Self.svg" alt="" /></a>
           <p><a href="index.html">Stitch</a></p>
@@ -31,12 +32,13 @@
         <div class="btns-div">
           <div class="cart-icon iconss">
             <img
-              src="img/mdi_cart-outline.svg"
+              src="img/shopping-cart.png"
               alt="shopping-cart"
               class="mdi-cart"
             />
             <span class="cart-badge">3</span>
           </div>
+          <!-- Mdi pic -->
 
           <!-- Btnreg & BtnLogin -->
           <button class="btn-reg"><a href="signup.html">REGISTER</a></button>
@@ -82,23 +84,23 @@
         <!--  -->
 
         <div class="location">
-         <label for="">location</label>
+          <!-- <label for="">location</label> -->
+          <!-- &#9662; -->
+   
+<div class="select" tabindex="1">
+  <input class="selectopt" name="test" type="radio" id="opt1" checked>
+  <label for="opt1" class="option">Oranges</label>
+  <input class="selectopt" name="test" type="radio" id="opt2">
+  <label for="opt2" class="option">Apples</label>
+  <input class="selectopt" name="test" type="radio" id="opt3">
+  <label for="opt3" class="option">Grapefruit</label>
+  <input class="selectopt" name="test" type="radio" id="opt4">
+  <label for="opt4" class="option">Bananas</label>
+  <input class="selectopt" name="test" type="radio" id="opt5">
+  <label for="opt5" class="option">Watermelon</label>
+</div>
 
-<!-- &#9662; -->
 
-          <div class="custom-dropdown">
-            <input type="checkbox" id="dropdown-toggle" hidden />
-            <label for="dropdown-toggle" class="dropdown-label">
-               <span class="arrow">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </label>
-            <ul class="dropdown-menu">
-              <li><a href="#">Australia</a></li>
-              <li><a href="#">Cameroon</a></li>
-              <li><a href="#">America</a></li>
-            </ul>
-          </div>
 
 
         </div>
@@ -154,6 +156,63 @@
         <button class="nextButton">Next</button>
       </div>
     </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="left-content">
+        <div class="stitchLogo">
+          <a href="index.html"><img src="img/Self.svg" alt="" /></a>
+          <p><a href="index.html">Stitch</a></p>
+        </div>
+
+        <div class="content-link">
+          <p>info@google.com</p>
+          <p>+234888595004</p>
+        </div>
+
+        <div class="icon-col">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <!-- <div class="rigth-content"> -->
+      <div class="col">
+        <h4>Shop</h4>
+        <a href="#">Create a Custom Size</a>
+        <a href="#">View Collection</a>
+        <a href="#">Accessories</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>About Us</h4>
+        <a href="#">Our Story</a>
+        <a href="#">Term & Conditions</a>
+        <a href="#">PrivacyPolicy</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>Help</h4>
+        <a href="#">How to Care for Wears</a>
+        <a href="#">Common Fit problems</a>
+        <a href="#">How to Measure Your body</a>
+        <a href="#">Shopping</a>
+      </div>
+      <!--  -->
+      <div class="col">
+        <h4>Support</h4>
+        <a href="#">Track an Existing Order</a>
+        <a href="#">Style Advice</a>
+        <a href="#">Schedule a Fitting</a>
+        <a href="#">Contact us</a>
+        <a href="#">Track an Existing Order</a>
+      </div>
+      <!--  -->
+      <!-- </div> -->
+    </footer>
 
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>

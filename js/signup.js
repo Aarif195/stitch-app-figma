@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const designerBtn = document.querySelector(".designer");
   const userBtn = document.querySelector(".user");
-  const yes = document.querySelectorAll(".yes");
-  console.log(yes);
+  const nameInput = document.querySelector(".nameInput");
+  console.log(nameInput);
 
   // FORM // Gender Selection Form
   const phoneLabel = document.getElementById("phone");
@@ -48,5 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // storeLabel.textContent = "Email Address";
 
     locationLabel.textContent = "Location";
+    nameInput.style.display = "none";
   });
 });

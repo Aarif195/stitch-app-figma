@@ -372,6 +372,8 @@ body {
 
 .rating-summary {
   display: flex;
+  flex-direction: column;
+  width: 400px;
   gap: 1.5rem;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -712,6 +714,11 @@ section {
     width: 90%;
     font-size: 1rem;
   }
+
+
+.rating-summary {
+width: 100%;
+}
 
   /* Related View */
   .relatedView {

@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <nav class="tailorNavbar">
+      <nav class="">
         <div class="stitchLogo">
           <a href="index.html"><img src="img/Self.svg" alt="" /></a>
           <p><a href="index.html">Stitch</a></p>
@@ -33,7 +33,7 @@
         <div class="btns-div">
           <div class="cart-icon iconss">
             <img
-              src="img/mdi_cart-outline.svg"
+              src="img/shopping-cart.png"
               alt="shopping-cart"
               class="mdi-cart"
             />
@@ -352,20 +352,25 @@
             <!--  -->
 
             <div class="popular">
-              <label for="">Popularity</label>
+              <!-- <label for="">Popularity</label> -->
 
-              <div class="custom-dropdown">
-                <input type="checkbox" id="dropdown-toggle" hidden />
-                <label for="dropdown-toggle" class="dropdown-label">
-                  <span class="arrow">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i
-                  ></span>
-                </label>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Australia</a></li>
-                  <li><a href="#">Cameroon</a></li>
-                  <li><a href="#">America</a></li>
-                </ul>
+              <div class="select" tabindex="1">
+                <input
+                  class="selectopt"
+                  name="test"
+                  type="radio"
+                  id="opt1"
+                  checked
+                />
+                <label for="opt1" class="option">Oranges</label>
+                <input class="selectopt" name="test" type="radio" id="opt2" />
+                <label for="opt2" class="option">Apples</label>
+                <input class="selectopt" name="test" type="radio" id="opt3" />
+                <label for="opt3" class="option">Grapefruit</label>
+                <input class="selectopt" name="test" type="radio" id="opt4" />
+                <label for="opt4" class="option">Bananas</label>
+                <input class="selectopt" name="test" type="radio" id="opt5" />
+                <label for="opt5" class="option">Watermelon</label>
               </div>
             </div>
           </div>
