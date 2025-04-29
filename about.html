@@ -18,15 +18,12 @@
     <title>About</title>
   </head>
   <body>
- 
-      <header>
-      <nav>
-
-       <div class="stitchLogo">
+    <header>
+      <nav id="normalNavbar" class="normalNavbar">
+        <div class="stitchLogo">
           <a href="index.html"><img src="img/Self.svg" alt="" /></a>
           <p><a href="index.html">Stitch</a></p>
         </div>
-
 
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -60,6 +57,64 @@
               <p class="greeting">Good Morning!</p>
               <span class="username">Grace Dan</span>
             </div>
+          </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Close Button -->
+        <div class="close-btn close" id="close-btn">&times;</div>
+      </nav>
+    </header>
+
+    <header>
+      <nav id="differentNavbar" class="differentNavbar" style="display: none">
+        <div class="stitchLogo">
+          <a href="#"><img src="img/Self.svg" alt="" /></a>
+          <p><a href="#">Stitch</a></p>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="product-list-signIn.html">Shop</a></li>
+          <li><a href="tailor.html">Find Tailor</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="btns-div">
+          <div class="cart-icon">
+            <img
+              src="img/shopping-cart.png"
+              alt="shopping-cart"
+              class="shopping-cart"
+            />
+            <!-- mdi-image -->
+            <span class="cart-badge">3</span>
+          </div>
+
+          <!-- Original register/login for desktop -->
+          <div class="mobile-btns desktop-only">
+            <button class="btn-reg"><a href="signup.html">REGISTER</a></button>
+            <button class="btn-login"><a href="login.html">LOGIN</a></button>
+          </div>
+
+          <div class="user-profile">
+            <div class="avartar">
+              <div></div>
+              <span class="notification-dot"></span>
+
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user-text">
+              <p class="greeting" id="greeting">Good Morning!</p>
+              <span class="username" id="username">Grace Dan</span>
+            </div>
+              <button id="logoutBtn" class="logout-btn">Logout</button>
           </div>
         </div>
 
@@ -145,7 +200,7 @@
             <img src="img/Group 33645.svg" alt="" />
             <div>
               <div class="wears">
-                <h5>Sell your wears </h5>
+                <h5>Sell your wears</h5>
                 <p>Get the perfect fit using our AI size recommendation tool</p>
               </div>
             </div>
@@ -155,7 +210,7 @@
             <img src="img/Group 33646.svg" alt="" />
             <div>
               <div class="wears">
-                <h5>Get your wears delivered </h5>
+                <h5>Get your wears delivered</h5>
                 <p>Get the perfect fit using our AI size recommendation tool</p>
               </div>
             </div>
@@ -218,11 +273,10 @@
 
       <footer>
         <div class="left-content">
-          
-       <div class="stitchLogo">
-          <a href="index.html"><img src="img/Self.svg" alt="" /></a>
-          <p><a href="index.html">Stitch</a></p>
-        </div>
+          <div class="stitchLogo">
+            <a href="index.html"><img src="img/Self.svg" alt="" /></a>
+            <p><a href="index.html">Stitch</a></p>
+          </div>
 
           <div class="content-link">
             <p>info@google.com</p>
@@ -275,5 +329,6 @@
 
     <!-- js -->
     <script src="js/header.js"></script>
+    <script src="js/auth.js"></script>
   </body>
 </html>

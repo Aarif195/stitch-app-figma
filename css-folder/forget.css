@@ -33,7 +33,7 @@ section {
   background-color: #fff;
   border: 1px solid #66666680;
   border-radius: 10px;
-  padding: 0 2rem;
+  padding: 1.5rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

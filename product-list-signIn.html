@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <nav class="">
+      <nav id="normalNavbar" class="normalNavbar"">
         <div class="stitchLogo">
           <a href="index.html"><img src="img/Self.svg" alt="" /></a>
           <p><a href="index.html">Stitch</a></p>
@@ -69,6 +69,66 @@
         <div class="close-btn close" id="close-btn">&times;</div>
       </nav>
     </header>
+
+<header>
+      <nav id="differentNavbar" class="differentNavbar"  style="display: none;">
+        <div class="stitchLogo">
+          <a href="#"><img src="img/Self.svg" alt="" /></a>
+          <p><a href="#">Stitch</a></p>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="tailor.html">Find Tailor</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="btns-div">
+          <div class="cart-icon">
+            <img
+              src="img/shopping-cart.png"
+              alt="shopping-cart"
+              class="shopping-cart"
+            />
+            <!-- mdi-image -->
+            <span class="cart-badge">3</span>
+          </div>
+
+          <!-- Original register/login for desktop -->
+          <div class="mobile-btns desktop-only">
+            <button class="btn-reg"><a href="signup.html">REGISTER</a></button>
+            <button class="btn-login"><a href="login.html">LOGIN</a></button>
+          </div>
+
+          <div class="user-profile">
+            <div class="avartar">
+              <div></div>
+              <span class="notification-dot"></span>
+
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user-text">
+              <p class="greeting" id="greeting">Good Morning!</p>
+              <span class="username" id="username">Grace Dan</span>
+            </div>
+              <button id="logoutBtn" class="logout-btn">Logout</button>
+          </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Close Button -->
+        <div class="close-btn close" id="close-btn">&times;</div>
+      </nav>
+    </header>
+
+
 
     <div class="clothwear">
       <div class="clothSize">
@@ -653,5 +713,7 @@
     </footer>
     <script src="js/header.js"></script>
     <script src="js/pro-list.js"></script>
+            <script src="js/auth.js"></script>
+
   </body>
 </html>

@@ -35,16 +35,16 @@
           <p class="user">User</p>
         </div>
 
-        <form action="">
+        <form method="get" id="signup-form">
           <div class="form-grid">
             <div class="form-input">
               <label for="firstName" id="firstName">First Name</label>
-              <input type="text" id="firstName" />
+              <input type="text" id="firstname" />
             </div>
 
             <div class="form-input">
               <label for="lastName" id="lastName">Last Name</label>
-              <input type="text" id="lastName" />
+              <input type="text" id="lastname" />
             </div>
             <!-- </div> -->
 
@@ -62,16 +62,17 @@
 
             <div class="form-input">
               <label for="phone" id="phone">Phone </label>
-              <input type="tel" name="phone" placeholder="" required />
+              <input type="tel" id="phoneNumber"  name="phone" placeholder="" required />
             </div>
           </div>
           <!--  -->
           <div class="nameInput">
-            <div class="form-input">
-              <label for="store" id="store" class="yes"> Store Name</label>
+            <div class="form-input" id="store-area">
+              <label for="storeName" id="store" class="yes"> Store Name</label>
               <input
                 type="text"
-                name="store"
+                name="storeName"
+                id="storePlace"
                 placeholder=""
                 class="yes"
                 required
@@ -79,8 +80,8 @@
             </div>
 
             <div class="form-input">
-              <label for="address" id="address"> Address/Location</label>
-              <input type="text" name="address" placeholder="" required />
+              <label for="address" id="address"> StoreLocation</label>
+              <input type="text"  id="storeLocation" name="address" placeholder="" required />
             </div>
 
             <!--  -->
@@ -101,7 +102,7 @@
 
               <input
                 type="password"
-                id="Password"
+                id="password"
                 name="Password"
                 placeholder=""
                 required
@@ -126,11 +127,14 @@
           </label>
 
           <div class="signupdiv">
-            <button><a href="#">Sign up</a></button>
+            <button type="submit">Sign up</button>
             <p class="sign-para">
               Already have an ccount? <a href="login.html">Log in </a>
             </p>
           </div>
+
+<div style="margin-top: 20px; text-align: center;" id="response"></div>
+
         </form>
       </section>
     </main>

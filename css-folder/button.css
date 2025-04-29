@@ -100,6 +100,23 @@
   }
 }
 
+
+.logout-btn {
+  /* margin-left: 20px; */
+  padding: 6px 12px;
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.logout-btn:hover {
+  background-color: #e53935;
+}
+
+
 /* About Page */
 .btn-explore {
   padding: 12px 20px;
@@ -276,7 +293,7 @@
   button:hover {
     border: 1px solid #245949;
     background: white;
-
+color: #245949;
     a {
       color: #245949;
     }
@@ -302,6 +319,8 @@
   button:hover {
     border: 1px solid #245949;
     background: white;
+    color: #245949;
+
 
     a {
       color: #245949;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details</title>
-      <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
@@ -15,15 +15,12 @@
     <link rel="stylesheet" href="css-folder/footer.css" />
   </head>
   <body>
-  
-  <header>
-      <nav class="">
-
-         <div class="stitchLogo">
+    <header>
+      <nav id="normalNavbar" class="normalNavbar">
+        <div class="stitchLogo">
           <a href="index.html"><img src="img/Self.svg" alt="" /></a>
           <p><a href="index.html">Stitch</a></p>
         </div>
-
 
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -71,11 +68,71 @@
         <div class="close-btn close" id="close-btn">&times;</div>
       </nav>
     </header>
+
+    <!-- SECOND NAVBAR -->
+    <header>
+      <nav id="differentNavbar" class="differentNavbar" style="display: none">
+        <div class="stitchLogo">
+          <a href="#"><img src="img/Self.svg" alt="" /></a>
+          <p><a href="#">Stitch</a></p>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product-list-signIn.html">Shop</a></li>
+          <li><a href="tailor.html">Find Tailor</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="btns-div">
+          <div class="cart-icon">
+            <img
+              src="img/shopping-cart.png"
+              alt="shopping-cart"
+              class="shopping-cart"
+            />
+            <!-- mdi-image -->
+            <span class="cart-badge">3</span>
+          </div>
+
+          <!-- Original register/login for desktop -->
+          <div class="mobile-btns desktop-only">
+            <button class="btn-reg"><a href="signup.html">REGISTER</a></button>
+            <button class="btn-login"><a href="login.html">LOGIN</a></button>
+          </div>
+
+          <div class="user-profile">
+            <div class="avartar">
+              <div></div>
+              <span class="notification-dot"></span>
+
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user-text">
+              <p class="greeting">Good Morning!</p>
+              <span class="username">Grace Dan</span>
+            </div>
+              <button id="logoutBtn" class="logout-btn">Logout</button>
+          </div>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Close Button -->
+        <div class="close-btn close" id="close-btn">&times;</div>
+      </nav>
+    </header>
+
     <div class="product-section">
       <!-- <div class="breadcrumb">Home > Shop > Women's Dresses</div>  -->
 
       <div class="product-container">
-         <!-- <div class="gallery-container">
+        <!-- <div class="gallery-container">
           <div class="main-image-wrapper">
             <img
               id="mainImage"
@@ -186,23 +243,23 @@
                 <div class="circle-inner color-dot-3"></div>
               </div>
             </div> -->
-          </div> 
+          </div>
 
           <!-- ChatBox -->
-           <div class="chatBox">
+          <div class="chatBox">
             <p class="storeOwner">Chat with Store owner</p>
             <img src="img/Vector.svg" alt="" class="storeImage" />
-          </div> 
+          </div>
 
           <!-- Size Div -->
-           <div class="size">
+          <div class="size">
             <p class="sizze">Size: <span class="sizeNO">8</span></p>
             <p class="request">Request Measurement</p>
             <p class="request">View Size Chart</p>
-          </div> 
+          </div>
 
           <!-- Button Page -->
-           <div class="size-selection">
+          <div class="size-selection">
             <button class="size-number">6</button>
             <button class="size-number">8</button>
             <button class="size-number">10</button>
@@ -215,7 +272,7 @@
             <button class="add-to-cart">Add To Cart</button>
             <button class="checkout-now">Checkout Now</button>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
 
@@ -233,8 +290,8 @@
           <div class="rating-summary">
             <div class="reviewedComment">
               <div class="rating-score">
-                <p> 4.5</p>
-               </div>
+                <p>4.5</p>
+              </div>
               <div>
                 <span class="stars">★★★★★</span>
                 <p class="review">from 1,25k reviews</p>
@@ -409,8 +466,7 @@
     <!-- footer -->
     <footer>
       <div class="left-content">
-      
-       <div class="stitchLogo">
+        <div class="stitchLogo">
           <a href="index.html"><img src="img/Self.svg" alt="" /></a>
           <p><a href="index.html">Stitch</a></p>
         </div>
@@ -467,5 +523,6 @@
     <!-- Script -->
     <script src="js/header.js"></script>
     <script src="js/product.js"></script>
+    <script src="js/auth.js"></script>
   </body>
 </html>
