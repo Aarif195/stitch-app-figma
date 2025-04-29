@@ -200,7 +200,7 @@ button {
 
 /* Styles for smaller screens */
 @media screen and (max-width: 768px) {
-  header nav {
+  .normalNavbar {
     padding: 1rem 1rem;
   }
 
@@ -389,7 +389,7 @@ button {
 /* Tailor List */
 @media screen and (max-width: 768px) {
   .differentNavbar {
-    padding: 1rem;
+    padding: 1rem 1rem;
   }
 
   .btns-div {
